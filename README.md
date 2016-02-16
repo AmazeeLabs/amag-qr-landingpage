@@ -1,15 +1,11 @@
 # qr-landingpage
 
 INSTALLATION:
-
+```
 npm install --global bower
-
 npm install --global gulp
-
-npm install
-
+npm install`
 bower install
-
 gulp inject
-
 gulp serve
+```
