@@ -88,4 +88,9 @@ md-radio-button.error-radio .md-off {
   font-family: 'AudiTypeNormal';
   src: url("../fonts/audi/AudiType-Normal.woff") format("woff"), url("../fonts/audi/AudiType-Normal.ttf") format("truetype"); }
 
+.variant-button {
+  color: #000;
+  background-color: #e7e9ea;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=map/audi.css.map */
