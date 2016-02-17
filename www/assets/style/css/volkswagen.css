@@ -88,4 +88,9 @@ md-radio-button.error-radio .md-off {
 body {
   font-family: 'VWHeadWebLight'; }
 
+.variant-button {
+  color: #fff;
+  background-color: #00b1eb;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=map/volkswagen.css.map */
