@@ -79,4 +79,9 @@ md-radio-button.error-radio .md-off {
   font-family: 'SkodaProRegular';
   src: url("../fonts/skoda/SkodaPro_Regular.eot") format("eot"), url("../fonts/skoda/SkodaPro_Regular.ttf") format("truetype"); }
 
+.variant-button {
+  color: #4ba82e;
+  background-color: #4ba82e;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=map/skoda.css.map */
