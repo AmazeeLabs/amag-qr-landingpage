@@ -1,0 +1,5 @@
+/* This file includes style overwrites of www/externals/bower_components/angular-material/angular-material.css */
+.layout-padding, .layout-padding-gt-sm, .layout-padding-md, .layout-padding > *,
+.layout-padding-gt-sm > *, .layout-padding-md > *, .layout-padding > .flex,
+.layout-padding > .flex-gt-sm, .layout-padding > .flex-md {
+  padding: 0px; }
