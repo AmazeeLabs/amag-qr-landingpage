@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'VWHeadWebExtraBold';
+  src: url('../fonts/volkswagen/VWHeadWeb-ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWHeadWeb-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'VWHeadWebLight';
+  src: url('../fonts/volkswagen/VWHeadWeb-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWHeadWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWHeadWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWHeadWeb-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
