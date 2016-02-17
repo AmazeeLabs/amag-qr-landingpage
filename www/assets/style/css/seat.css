@@ -94,4 +94,9 @@ md-radio-button.error-radio .md-off {
   font-family: 'MetaWebProThin';
   src: url("../fonts/seat/MetaWebPro-Thin.woff") format("woff"), url("../fonts/seat/MetaWebPro-Thin.ttf") format("truetype"); }
 
+.variant-button {
+  color: #fff;
+  background-color: #D7122B;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=map/seat.css.map */
