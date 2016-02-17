@@ -1,11 +1,22 @@
+/* CI / CD Colors*/
+$white: #fff;
+$black: #000;
+$seat-black: #333;
+$dark-grey: #666;
+$grey: #999;
+$light-grey: #AAA;
+$lighter-grey: #CCC;
+$seat-red: #D7122B;
+
 /*General styles*/
-$text: #000;
+$text: $seat-black;
 $line: #e6e6e6;
 
 /*Button styles*/
-$button: #00b1eb;
-$secondary-button: #e3ebed;
+$button: $seat-red;
+$secondary-button: $lighter-grey;
 
 /*Footer styles*/
-$footer-text: #31424a;
-$footer-line: #edf4f6;
+$footer-background: $seat-black;
+$footer-text: $grey;
+$footer-line: $black;
