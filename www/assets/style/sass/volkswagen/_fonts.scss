@@ -17,3 +17,15 @@
        url('../fonts/volkswagen/VWHeadWeb-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/volkswagen/VWHeadWeb-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+@mixin fontbold {
+  font-family: 'VWHeadWebExtraBold';
+}
+
+@mixin fontnormal {
+  font-family: 'VWHeadWebLight';
+}
+
+body {
+  @include fontnormal;
+}

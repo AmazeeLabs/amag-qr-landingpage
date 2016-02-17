@@ -83,4 +83,7 @@ md-radio-button.error-radio .md-off {
   src: url("../fonts/volkswagen/VWHeadWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWHeadWeb-Light.woff2") format("woff2"), url("../fonts/volkswagen/VWHeadWeb-Light.woff") format("woff"), url("../fonts/volkswagen/VWHeadWeb-Light.ttf") format("truetype"), url("../fonts/volkswagen/VWHeadWeb-Light.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
+body {
+  font-family: 'VWHeadWebLight'; }
+
 /*# sourceMappingURL=map/volkswagen.css.map */
