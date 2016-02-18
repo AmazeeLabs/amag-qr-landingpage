@@ -5,3 +5,7 @@ www/assets/style/css/map/*.*
 npm-debug.log
 .DS_Store
 www/externals/bower_components
+
+
+# Ignore CSS files for development
+www/assets/style/css/*.*
