@@ -1,12 +1,14 @@
 <div layout="column" ng-controller="ImageAreaCtrl">
     <div>
+    <div class="image-area-top">
         <div layout="row" layout-align="center">
             <h3 class=".md-title">{{global.params.selectedModelVariantObj.name}}</h3>
         </div>
 
-        <div layout="row" layout-align="center">
+        <div layout="row" layout-align="center" class="price">
             <label>{{'IMAGEAREA_FROM'|translate}}&nbsp;{{global.params.selectedModelVariantObj.versionList[0].price | currency : "" : 0}} {{'IMAGEAREA_FRANCS' | translate}}</label>
         </div>
+    </div>
 
         <div layout="row" layout-align="center">
             <!--<img class="car-contact" src="{{imageUrl}}">-->
