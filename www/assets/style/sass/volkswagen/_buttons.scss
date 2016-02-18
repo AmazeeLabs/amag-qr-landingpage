@@ -1,9 +1,13 @@
-.variant-button {
-  color: $white;
-  background-color: $button;
+.variant-button, .back-button {
   text-transform: uppercase;
 }
 
-.back-button {
+.variant-button {
+  @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table);
+  margin: 30px auto;
+}
 
+.back-button {
+  @include button($color:$button,$font-size:15,$display:block);
+  margin: 20px 0 0 20px;
 }
