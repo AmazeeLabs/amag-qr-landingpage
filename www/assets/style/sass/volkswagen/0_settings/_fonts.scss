@@ -1,29 +1,29 @@
 @font-face {
-  font-family: 'VWHeadWebExtraBold';
-  src: url('../fonts/volkswagen/VWHeadWeb-ExtraBold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/volkswagen/VWHeadWeb-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/volkswagen/VWHeadWeb-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'VWHeadWebBold.eot';
+  src: url('../fonts/volkswagen/VWHeadWeb-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWHeadWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'VWHeadWebLight';
-  src: url('../fonts/volkswagen/VWHeadWeb-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/volkswagen/VWHeadWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/volkswagen/VWHeadWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/volkswagen/VWHeadWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/volkswagen/VWHeadWeb-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/volkswagen/VWHeadWeb-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'VWTextWebRegular';
+  src: url('../fonts/volkswagen/VWTextWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWTextWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWTextWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWTextWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWTextWeb-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWTextWeb-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @mixin fontbold {
-  font-family: 'VWHeadWebExtraBold',Arial, Helvetica, sans-serif;
+  font-family: 'VWHeadWebBold',Arial, Helvetica, sans-serif;
 }
 
 @mixin fontnormal {
-  font-family: 'VWHeadWebLight',Arial, Helvetica, sans-serif;
+  font-family: 'VWTextWebRegular',Arial, Helvetica, sans-serif;
 }
 
 body {

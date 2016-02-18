@@ -72,21 +72,21 @@ md-radio-button.error-radio .md-off {
 /*Button styles*/
 /*Footer styles*/
 @font-face {
-  font-family: 'VWHeadWebExtraBold';
-  src: url("../fonts/volkswagen/VWHeadWeb-ExtraBold.eot");
+  font-family: 'VWHeadWebBold.eot';
+  src: url("../fonts/volkswagen/VWHeadWeb-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/volkswagen/VWHeadWeb-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWHeadWeb-ExtraBold.woff2") format("woff2"), url("../fonts/volkswagen/VWHeadWeb-ExtraBold.woff") format("woff"), url("../fonts/volkswagen/VWHeadWeb-ExtraBold.ttf") format("truetype"), url("../fonts/volkswagen/VWHeadWeb-ExtraBold.svg#svgFontName") format("svg");
+  src: url("../fonts/volkswagen/VWHeadWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWHeadWeb-Bold.woff2") format("woff2"), url("../fonts/volkswagen/VWHeadWeb-Bold.woff") format("woff"), url("../fonts/volkswagen/VWHeadWeb-Bold.ttf") format("truetype"), url("../fonts/volkswagen/VWHeadWeb-Bold.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'VWHeadWebLight';
-  src: url("../fonts/volkswagen/VWHeadWeb-Light.eot");
+  font-family: 'VWTextWebRegular';
+  src: url("../fonts/volkswagen/VWTextWeb-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/volkswagen/VWHeadWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWHeadWeb-Light.woff2") format("woff2"), url("../fonts/volkswagen/VWHeadWeb-Light.woff") format("woff"), url("../fonts/volkswagen/VWHeadWeb-Light.ttf") format("truetype"), url("../fonts/volkswagen/VWHeadWeb-Light.svg#svgFontName") format("svg");
+  src: url("../fonts/volkswagen/VWTextWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWTextWeb-Regular.woff2") format("woff2"), url("../fonts/volkswagen/VWTextWeb-Regular.woff") format("woff"), url("../fonts/volkswagen/VWTextWeb-Regular.ttf") format("truetype"), url("../fonts/volkswagen/VWTextWeb-Regular.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 body {
-  font-family: 'VWHeadWebLight',Arial, Helvetica, sans-serif; }
+  font-family: 'VWTextWebRegular',Arial, Helvetica, sans-serif; }
 
 .variant-button {
   color: #fff;
