@@ -4,7 +4,13 @@ footer {
   text-align: center;
   background-color: $footer-background;
   color: $footer-text;
-    .social-media {
+  font-size: 1.1rem;
+  a {
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
     padding-bottom: 1rem;
     div{
       height: 4rem;
@@ -20,14 +26,28 @@ footer {
     &:after {
       @include clearfix;
     }
+    .facebook {
+      background: url(../img/volkswagen/facebook.svg) center center;
+    }
+    .google{
+      background: url(../img/volkswagen/google.svg) center center;
+    }
+    .twitter {
+      background: url(../img/volkswagen/twitter.svg) center center;
+    }
   }
-  .facebook {
-    background: url(../img/volkswagen/facebook.svg) center center;
+
+  //impressum, terms and legal styles
+  .legal > div{
+    padding: 1.5rem 0;
+    border-top: 1px solid $footer-line;
+    &:last-child {
+      border-bottom: 1px solid $footer-line;
+    }
   }
-  .google{
-    background: url(../img/volkswagen/google.svg) center center;
-  }
-  .twitter {
-    background: url(../img/volkswagen/twitter.svg) center center;
+
+  .copyright {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
   }
 }
