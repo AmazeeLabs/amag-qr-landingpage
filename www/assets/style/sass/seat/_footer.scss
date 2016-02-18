@@ -1,20 +1,14 @@
 footer {
   background-color: $footer-background;
   color: $footer-text;
-  padding: 1.5rem;
     .social-media {
     padding-bottom: 1rem;
     div{
       height: 2rem;
-      background-size: contain;
-      background-repeat: no-repeat;
       @include span(1 of 4 inside nogutter);
       &.twitter, &.newsletter{
         display: none;
       }
-    }
-    &:after {
-      @include clearfix;
     }
   }
   .facebook {
