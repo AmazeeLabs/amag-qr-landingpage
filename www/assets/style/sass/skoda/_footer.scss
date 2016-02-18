@@ -1,0 +1,28 @@
+footer {
+  border-top: 1px solid $lighter-grey;
+  margin: 2.5rem 1.5rem .5rem;
+  .social-media {
+    padding: 1.5rem 0;
+    div{
+      height: 2.5rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include span(1 of 3 inside nogutter);
+      &.google, &.instagram, &.twitter {
+        display: none;
+      }
+    }
+    &:after {
+      @include clearfix;
+    }
+  }
+  .facebook {
+    background: url(../img/skoda/facebook.png) center center;
+  }
+  .youtube{
+    background: url(../img/skoda/youtube.png) center center;
+  }
+  .newsletter {
+    background: url(../img/skoda/newsletter.png) center center;
+  }
+}
