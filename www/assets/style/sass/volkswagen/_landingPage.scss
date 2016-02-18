@@ -19,3 +19,29 @@ h3 {
     width: 100%;
   }
 }
+
+.car-image {
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 10vw;
+    bottom: 0;
+    background: $white;
+  }
+
+  &:before {
+    left: -50vw;
+    margin-left: 10px;
+    transform: rotate(7deg);
+  }
+
+  &:after {
+    right: -50vw;
+    margin-right: 10px;
+    transform: rotate(-7deg);
+  }
+}
