@@ -14,6 +14,7 @@
 // output any styles themselves: Importing them multiple times to resolve
 // dependencies shouldn't be a problem.
 
+@import "helpers/*";
 @import "base/*";
 @import "volkswagen/0_settings/*";
 @import "volkswagen/*";
