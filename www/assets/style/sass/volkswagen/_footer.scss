@@ -16,15 +16,9 @@ footer {
       height: 4rem;
       width: 4rem;
       margin-right: .5rem;
-      display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
       &.youtube, &.newsletter, &.instagram{
         display: none;
       }
-    }
-    &:after {
-      @include clearfix;
     }
     .facebook {
       background: url(../img/volkswagen/facebook.svg) center center;
