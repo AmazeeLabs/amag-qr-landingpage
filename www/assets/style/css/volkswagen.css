@@ -1,3 +1,6 @@
+body {
+  margin: 0px; }
+
 a {
   text-decoration: none; }
 
@@ -107,5 +110,10 @@ h3 {
 .price {
   font-size: 1.3rem;
   margin-top: 1rem; }
+
+.car-image {
+  width: 100%; }
+  .car-image img {
+    width: 100%; }
 
 /*# sourceMappingURL=map/volkswagen.css.map */
