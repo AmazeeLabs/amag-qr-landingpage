@@ -25,6 +25,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   vertical-align: baseline; }
 
+body {
+  margin: 0px; }
+
+a {
+  text-decoration: none; }
+
 .error-text {
   color: #dd2c00; }
 
@@ -99,7 +105,7 @@ md-radio-button.error-radio .md-off {
 /*Button styles*/
 /*Footer styles*/
 @font-face {
-  font-family: 'VWHeadWebBold.eot';
+  font-family: 'VWHeadWebBold';
   src: url("../fonts/volkswagen/VWHeadWeb-Bold.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/volkswagen/VWHeadWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/volkswagen/VWHeadWeb-Bold.woff2") format("woff2"), url("../fonts/volkswagen/VWHeadWeb-Bold.woff") format("woff"), url("../fonts/volkswagen/VWHeadWeb-Bold.ttf") format("truetype"), url("../fonts/volkswagen/VWHeadWeb-Bold.svg#svgFontName") format("svg");
@@ -119,5 +125,22 @@ body {
   color: #fff;
   background-color: #00b1eb;
   text-transform: uppercase; }
+
+.image-area-top {
+  margin: 2rem 1rem; }
+
+h3 {
+  font-family: 'VWHeadWebBold',Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem; }
+
+.price {
+  font-size: 1.3rem;
+  margin-top: 1rem; }
+
+.car-image {
+  width: 100%; }
+  .car-image img {
+    width: 100%; }
 
 /*# sourceMappingURL=map/volkswagen.css.map */
