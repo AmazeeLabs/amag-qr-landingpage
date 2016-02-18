@@ -4,7 +4,7 @@
 
 .variant-button {
   @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table);
-  margin: 30px auto;
+  margin: 15px auto 30px;
 }
 
 .back-button {
