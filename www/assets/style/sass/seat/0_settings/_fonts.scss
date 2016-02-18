@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'MetaCompProBoldW02Regular';
+  font-family: 'MetaProBold';
   src: url('../fonts/seat/MetaCompPro-BoldW02Regular.woff') format('woff'),
        url('../fonts/seat/MetaCompPro-BoldW02Regular.ttf')  format('truetype');
 }
 
 @font-face {
-  font-family: 'MetaCompProMediumW02Regular';
+  font-family: 'MetaProMedium';
   src: url('../fonts/seat/MetaCompPro-MediumW02Regular.woff') format('woff'),
        url('../fonts/seat/MetaCompPro-MediumW02Regular.ttf')  format('truetype');
 }
@@ -34,3 +34,22 @@
        url('../fonts/seat/MetaWebPro-Thin.ttf')  format('truetype');
 }
 
+@mixin fontbold {
+  font-family: 'MetaProBold', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontmedium {
+  font-family: 'MetaProMedium', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontnormal {
+  font-family: 'MetaWebProBook', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontlight {
+  font-family: 'MetaWebProLight', Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+  @include fontnormal;
+}

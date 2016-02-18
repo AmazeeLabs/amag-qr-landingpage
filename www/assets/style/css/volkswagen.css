@@ -86,7 +86,7 @@ md-radio-button.error-radio .md-off {
   /* Legacy iOS */ }
 
 body {
-  font-family: 'VWHeadWebLight'; }
+  font-family: 'VWHeadWebLight',Arial, Helvetica, sans-serif; }
 
 .variant-button {
   color: #fff;

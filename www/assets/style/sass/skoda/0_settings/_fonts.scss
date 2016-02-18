@@ -6,6 +6,18 @@
 
 @font-face {
   font-family: 'SkodaProRegular';
-    src: url('../fonts/skoda/SkodaPro_Regular.eot') format('eot'),
-         url('../fonts/skoda/SkodaPro_Regular.ttf')  format('truetype');
+    src: url('../fonts/skoda/SkodaPro-Regular.eot') format('eot'),
+         url('../fonts/skoda/SkodaPro-Regular.ttf')  format('truetype');
+}
+
+@mixin fontbold {
+  font-family: 'SkodaProBold', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontnormal {
+  font-family: 'SkodaProRegular', Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+  @include fontnormal;
 }

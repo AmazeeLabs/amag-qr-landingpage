@@ -19,11 +19,11 @@
 }
 
 @mixin fontbold {
-  font-family: 'VWHeadWebExtraBold';
+  font-family: 'VWHeadWebExtraBold',Arial, Helvetica, sans-serif;
 }
 
 @mixin fontnormal {
-  font-family: 'VWHeadWebLight';
+  font-family: 'VWHeadWebLight',Arial, Helvetica, sans-serif;
 }
 
 body {

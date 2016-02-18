@@ -71,11 +71,11 @@ md-radio-button.error-radio .md-off {
 /*Button styles*/
 /*Footer styles*/
 @font-face {
-  font-family: 'MetaCompProBoldW02Regular';
+  font-family: 'MetaProBold';
   src: url("../fonts/seat/MetaCompPro-BoldW02Regular.woff") format("woff"), url("../fonts/seat/MetaCompPro-BoldW02Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'MetaCompProMediumW02Regular';
+  font-family: 'MetaProMedium';
   src: url("../fonts/seat/MetaCompPro-MediumW02Regular.woff") format("woff"), url("../fonts/seat/MetaCompPro-MediumW02Regular.ttf") format("truetype"); }
 
 @font-face {
@@ -93,6 +93,9 @@ md-radio-button.error-radio .md-off {
 @font-face {
   font-family: 'MetaWebProThin';
   src: url("../fonts/seat/MetaWebPro-Thin.woff") format("woff"), url("../fonts/seat/MetaWebPro-Thin.ttf") format("truetype"); }
+
+body {
+  font-family: 'MetaWebProBook', Verdana, Arial, Helvetica, sans-serif; }
 
 .variant-button {
   color: #fff;

@@ -77,7 +77,10 @@ md-radio-button.error-radio .md-off {
 
 @font-face {
   font-family: 'SkodaProRegular';
-  src: url("../fonts/skoda/SkodaPro_Regular.eot") format("eot"), url("../fonts/skoda/SkodaPro_Regular.ttf") format("truetype"); }
+  src: url("../fonts/skoda/SkodaPro-Regular.eot") format("eot"), url("../fonts/skoda/SkodaPro-Regular.ttf") format("truetype"); }
+
+body {
+  font-family: 'SkodaProRegular', Verdana, Arial, Helvetica, sans-serif; }
 
 .variant-button {
   color: #4ba82e;
