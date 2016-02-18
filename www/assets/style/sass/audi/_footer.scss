@@ -1,7 +1,6 @@
 footer {
   background-color: $footer-background;
   color: $footer-text;
-  padding: 1.5rem;
     .social-media {
     padding-bottom: 1rem;
     div{
@@ -9,15 +8,9 @@ footer {
       width: 3rem;
       margin-right: .5rem;
       background-color: $black;
-      display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
       &.instagram, &.twitter, &.newsletter, &.youtube{
         display: none;
       }
-    }
-    &:after {
-      @include clearfix;
     }
   }
   .facebook {
