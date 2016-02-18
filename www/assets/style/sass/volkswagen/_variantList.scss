@@ -1,0 +1,9 @@
+.variantlist {
+  .md-list-item-text {
+    color: $black;
+
+    .ng-binding {
+      font-size: rem(16px) !important;
+    }
+  }
+}

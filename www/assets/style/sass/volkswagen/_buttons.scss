@@ -9,7 +9,7 @@
 
 .back-button {
   @include button($color:$button,$font-size:15,$display:block);
-  margin: 1.2rem 0 0 1rem;
+  margin: 0 0 0 1rem;
 }
 
 .ctas .md-button {

@@ -29,3 +29,15 @@
 body {
   @include fontnormal;
 }
+
+h1 {
+  @include fontbold;
+  font-size: rem(32px);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  @include fontnormal;
+  font-size: rem(20px);
+  margin-bottom: 1rem;
+}
