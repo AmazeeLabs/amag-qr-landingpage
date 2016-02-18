@@ -24,11 +24,11 @@
                     '': {
                         templateUrl: 'app/sites/modelList.html'
                     },
-                    'language@modelList': {
-                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
-                    },
                     'modelList@modelList': {
                         templateUrl: 'app/components/modelList/_modelList.html'
+                    },
+                    'language@modelList': {
+                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
                     }
                 }
             })
@@ -38,11 +38,11 @@
                     '': {
                         templateUrl: 'app/sites/variantList.html'
                     },
-                    'language@variantList': {
-                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
-                    },
                     'variantList@variantList': {
                         templateUrl: 'app/components/variantList/_variantList.html'
+                    },
+                    'language@variantList': {
+                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
                     }
                 }
             })
@@ -52,14 +52,14 @@
                     '': {
                         templateUrl: 'app/sites/landingPage.html'
                     },
-                    'language@landingPage': {
-                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
-                    },
                     'imageArea@landingPage': {
                         templateUrl: 'app/components/imageArea/_imageArea.html'
                     },
                     'landingPageForm@landingPage': {
                         templateUrl: 'app/components/landingPageForm/_landingPageForm.html'
+                    },
+                    'language@landingPage': {
+                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
                     }
                 }
             })
@@ -69,14 +69,14 @@
                     '': {
                         templateUrl: 'app/sites/leasingCalculator.html'
                     },
-                    'language@leasingCalculator': {
-                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
-                    },
                     'imageArea@leasingCalculator': {
                         templateUrl: 'app/components/imageArea/_imageArea.html'
                     },
                     'leasingCalculatorForm@leasingCalculator': {
                         templateUrl: 'app/components/leasingCalculator/_leasingCalculator.html'
+                    },
+                    'language@leasingCalculator': {
+                        templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
                     }
                 }
             })
