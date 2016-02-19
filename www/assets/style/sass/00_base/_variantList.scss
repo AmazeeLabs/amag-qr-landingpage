@@ -1,5 +1,6 @@
 .layout-column {
   @include clearfix;
+  width: 100%;
 
   .md-3-line {
     float: left;

@@ -1,0 +1,19 @@
+.price {
+
+}
+
+.car-image {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 101%;
+    height: 10vw;
+    bottom: -5vw;
+    background: $white;
+    left: 0;
+    transform: rotate(-5deg);
+  }
+}
