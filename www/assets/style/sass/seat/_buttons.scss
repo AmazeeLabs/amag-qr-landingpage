@@ -1,5 +1,44 @@
-.variant-button {
+.back-button-wrapper {
+  background-color: $seat-black;
+  padding: 1.5rem;
+}
+
+.back-button {
   color: $white;
-  background-color: $button;
   text-transform: uppercase;
+  background: url(../img/seat/arrow.svg) left center;
+  background-repeat: no-repeat;
+  padding-left: 1.5rem;
+}
+
+.variant-button-wrapper {
+  text-align: center;
+}
+
+.variant-button {
+  @include button($bg:$button,$font-size:14,$color:$white,$padding:17px 12px);
+}
+
+.ctas .md-button {
+  @include button($color:$seat-black,$font-size:22,$padding:10px 0,$display:block);
+  margin: 0 1rem;
+}
+
+.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
+  background-repeat: no-repeat;
+  background-size: 2.2rem;
+  padding-left: 4rem;
+  margin: 1.5rem;
+}
+
+.leasing-button {
+  background: url(../img/seat/leasing.svg) left center;
+}
+
+.testdrive-button {
+  background: url(../img/seat/testdrive.svg) left center;
+}
+
+.catalog-button {
+  background: url(../img/seat/catalog.svg) left center;
 }

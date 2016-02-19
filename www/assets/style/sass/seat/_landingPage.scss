@@ -1,7 +1,3 @@
-.price {
-
-}
-
 .car-image {
   position: relative;
 
@@ -16,4 +12,8 @@
     left: 0;
     transform: rotate(-5deg);
   }
+}
+
+.image-are-top h1, .image-are-top h3{
+  color: $seat-black;
 }

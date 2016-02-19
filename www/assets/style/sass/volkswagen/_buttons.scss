@@ -16,7 +16,6 @@
 }
 
 .ctas .md-button {
-  // @include fontbold;
   @include button($color:$black,$font-size:22,$padding:10px 0,$display:block);
   margin: 0 1rem;
 }
