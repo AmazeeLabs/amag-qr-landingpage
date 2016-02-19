@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: 'SkodaProExtraBold';
+    src: url('../fonts/skoda/SkodaPro-ExtraBold.eot') format('eot'),
+         url('../fonts/skoda/SkodaPro-ExtraBold.ttf')  format('truetype');
+}
+
+@font-face {
   font-family: 'SkodaProRegular';
     src: url('../fonts/skoda/SkodaPro-Regular.eot') format('eot'),
          url('../fonts/skoda/SkodaPro-Regular.ttf')  format('truetype');
@@ -14,10 +20,26 @@
   font-family: 'SkodaProBold', Verdana, Arial, Helvetica, sans-serif;
 }
 
+@mixin fontextrabold {
+  font-family: 'SkodaProExtraBold', Verdana, Arial, Helvetica, sans-serif;
+}
+
 @mixin fontnormal {
   font-family: 'SkodaProRegular', Verdana, Arial, Helvetica, sans-serif;
 }
 
 body {
   @include fontnormal;
+}
+
+h1 {
+  @include fontextrabold;
+  font-size: rem(30px);
+  line-height: rem(34px);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
 }
