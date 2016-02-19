@@ -1,9 +1,10 @@
-.back-button-wrapper {
-  margin: 1rem 1rem 1.5rem;
-}
 .back-button, .variant-button {
   color: $black;
   @include fontextendedbold;
+}
+
+.back-button-wrapper {
+  margin: 1rem 1rem 1.5rem;
 }
 
 .back-button {
@@ -12,15 +13,25 @@
   padding-left: 1.5rem;
 }
 
+.variant-button-wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .variant-button {
   background: url(../img/audi/arrow-right.svg) right center no-repeat;
   background-size: 1rem;
   padding-right: 1.5rem;
-  margin: 1rem 1rem 3rem;
+  margin: 1rem auto 3rem;
+  display: block;
+  max-width: 400px;
 }
 
 .ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
   @include button($bg:$black,$color:$white,$padding:15px 5px,$display:block);
+  max-width: 400px;
+  padding-left: 4rem;
+  margin: 1rem auto;
   &:before, &:after {
     content: '';
     position: absolute;
@@ -37,8 +48,6 @@
     width: 1rem;
     background: url(../img/audi/arrow-right.svg) left center no-repeat;
   }
-  padding-left: 4rem;
-  margin: 1rem;
 }
 
 .leasing-button:before {
