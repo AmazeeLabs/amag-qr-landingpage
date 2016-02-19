@@ -1,5 +1,55 @@
-.variant-button {
+.back-button, .variant-button {
   color: $skoda-green;
-  background-color: $button;
+}
+
+.back-button-wrapper {
+  margin: 1rem 1rem 1.5rem;
+}
+
+.back-button {
+  background: url(../img/skoda/arrow.svg) left center no-repeat;
+  background-size: 1rem;
+  padding-left: 1.5rem;
   text-transform: uppercase;
+}
+
+.variant-button-wrapper {
+  text-align: center;
+}
+
+.variant-button {
+  @include fontbold;
+  background: url(../img/skoda/arrow-right.svg) right center no-repeat;
+  background-size: 1rem;
+  padding-right: 1.5rem;
+  margin: 2.5rem auto 2rem;
+}
+
+.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
+  @include button($bg:$black,$color:$white,$padding:15px 5px,$display:block);
+  max-width: 400px;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  margin: 1rem auto;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-size: 1.8rem;
+    right: 1rem;
+    width: 2rem;
+  }
+}
+
+.leasing-button:after {
+  background: url(../img/skoda/leasing.svg) left center no-repeat;
+}
+
+.testdrive-button:after {
+  background: url(../img/skoda/testdrive.png) left center no-repeat;
+}
+
+.catalog-button:after {
+  background: url(../img/skoda/catalog.png) left center no-repeat;
 }
