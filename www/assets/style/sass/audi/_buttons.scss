@@ -24,7 +24,7 @@
 }
 
 .leasing-button, .testdrive-button, .catalog-button {
-  @include button($bg:$black,$color:$white,$padding:15px 5px 15px 4rem,$display:block,$max-width:400px,$margin:1rem auto);
+  @include button($bg:$black,$color:$white,$font-size:14px,$padding:13px 5px 13px 4rem,$display:block,$max-width:400px,$margin:1rem auto);
   &:before, &:after {
     content: '';
     position: absolute;
@@ -33,6 +33,7 @@
   }
   &:before {
     @include iconLeft;
+    background-size: 1.6rem;
     left: 1rem;
   }
   &:after {
