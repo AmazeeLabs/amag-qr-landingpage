@@ -8,9 +8,8 @@
 }
 
 .back-button {
-  background: url(../img/audi/arrow.svg) left center no-repeat;
-  background-size: 1rem;
-  padding-left: 1.5rem;
+  @include arrowLeft;
+  background-image: url(../img/audi/arrow.svg);
 }
 
 .variant-button-wrapper {
@@ -19,45 +18,38 @@
 }
 
 .variant-button {
-  background: url(../img/audi/arrow-right.svg) right center no-repeat;
-  background-size: 1rem;
-  padding-right: 1.5rem;
-  margin: 1rem auto 3rem;
-  display: block;
-  max-width: 400px;
+  @include arrowRight;
+  background-image: url(../img/audi/arrow-right.svg);
+  @include button($display:block,$max-width:400px,$margin:1rem auto 3rem);
 }
 
-.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
-  @include button($bg:$black,$color:$white,$padding:15px 5px,$display:block);
-  max-width: 400px;
-  padding-left: 4rem;
-  margin: 1rem auto;
+.leasing-button, .testdrive-button, .catalog-button {
+  @include button($bg:$black,$color:$white,$padding:15px 5px 15px 4rem,$display:block,$max-width:400px,$margin:1rem auto);
   &:before, &:after {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    background-size: 1.8rem;
   }
   &:before {
-    width: 2rem;
+    @include iconLeft;
     left: 1rem;
   }
   &:after {
     right: 1rem;
-    width: 1rem;
-    background: url(../img/audi/arrow-right.svg) left center no-repeat;
+    @include arrowRight;
+    background-image: url(../img/audi/arrow-right.svg);
   }
 }
 
 .leasing-button:before {
-  background: url(../img/audi/leasing.png) left center no-repeat;
+  background-image: url(../img/audi/leasing.png);
 }
 
 .testdrive-button:before {
-  background: url(../img/audi/testdrive.png) left center no-repeat;
+  background-image: url(../img/audi/testdrive.png);
 }
 
 .catalog-button:before {
-  background: url(../img/audi/catalog.png) left center no-repeat;
+  background-image: url(../img/audi/catalog.png);
 }
