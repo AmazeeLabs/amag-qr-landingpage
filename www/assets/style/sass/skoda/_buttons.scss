@@ -24,15 +24,19 @@
 }
 
 .leasing-button, .testdrive-button, .catalog-button {
-  @include button($bg:$black,$color:$white,$padding:1rem 4rem 1rem 1.5rem,$display:block,$max-width:400px,$margin:.2rem auto);
+  @include button($bg:$black,$color:$white,$padding:.8rem 4rem .8rem 1.5rem,$display:block,$max-width:400px,$margin:.2rem auto);
   &:after {
     content: '';
     position: absolute;
     @include iconRight;
+    background-size: 1.5rem;
     top: 0;
     bottom: 0;
     right: 1rem;
     width: 2rem;
+  }
+  &:hover{
+    background-color: $dark-grey;
   }
 }
 
