@@ -7,9 +7,8 @@
 }
 
 .back-button {
-  background: url(../img/skoda/arrow.svg) left center no-repeat;
-  background-size: 1rem;
-  padding-left: 1.5rem;
+  @include arrowLeft;
+  background-image: url(../img/skoda/arrow.svg);
   text-transform: uppercase;
 }
 
@@ -19,37 +18,32 @@
 
 .variant-button {
   @include fontbold;
-  background: url(../img/skoda/arrow-right.svg) right center no-repeat;
-  background-size: 1rem;
-  padding-right: 1.5rem;
+  @include arrowRight;
+  background-image: url(../img/skoda/arrow-right.svg);
   margin: 2.5rem auto 2rem;
 }
 
-.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
-  @include button($bg:$black,$color:$white,$padding:15px 5px,$display:block);
-  max-width: 400px;
-  padding-left: 1.5rem;
-  padding-right: 4rem;
-  margin: 1rem auto;
+.leasing-button, .testdrive-button, .catalog-button {
+  @include button($bg:$black,$color:$white,$padding:1rem 4rem 1rem 1.5rem,$display:block,$max-width:400px,$margin:.2rem auto);
   &:after {
     content: '';
     position: absolute;
+    @include iconRight;
     top: 0;
     bottom: 0;
-    background-size: 1.8rem;
     right: 1rem;
     width: 2rem;
   }
 }
 
 .leasing-button:after {
-  background: url(../img/skoda/leasing.svg) left center no-repeat;
+  background-image: url(../img/skoda/leasing.svg);
 }
 
 .testdrive-button:after {
-  background: url(../img/skoda/testdrive.png) left center no-repeat;
+  background-image: url(../img/skoda/testdrive.png);
 }
 
 .catalog-button:after {
-  background: url(../img/skoda/catalog.png) left center no-repeat;
+  background-image: url(../img/skoda/catalog.png);
 }
