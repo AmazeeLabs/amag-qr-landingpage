@@ -6,9 +6,8 @@
 .back-button {
   color: $white;
   text-transform: uppercase;
-  background: url(../img/seat/arrow.svg) left center;
-  background-repeat: no-repeat;
-  padding-left: 1.5rem;
+  @include arrowLeft;
+  background-image: url(../img/seat/arrow.svg);
 }
 
 .variant-button-wrapper {
@@ -19,26 +18,19 @@
   @include button($bg:$button,$font-size:14,$color:$white,$padding:17px 12px);
 }
 
-.ctas .md-button {
-  @include button($color:$seat-black,$font-size:22,$padding:10px 0,$display:block);
-  margin: 0 1rem;
-}
-
-.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
-  background-repeat: no-repeat;
-  background-size: 2.2rem;
-  padding-left: 4rem;
-  margin: 1.5rem;
+.leasing-button, .testdrive-button, .catalog-button {
+  @include button($font-size:22,$padding:10px 0,$display:block,$max-width:400px,$margin:1rem auto);
+  @include iconLeft;
 }
 
 .leasing-button {
-  background: url(../img/seat/leasing.svg) left center;
+  background-image: url(../img/seat/leasing.svg);
 }
 
 .testdrive-button {
-  background: url(../img/seat/testdrive.svg) left center;
+  background-image: url(../img/seat/testdrive.svg);
 }
 
 .catalog-button {
-  background: url(../img/seat/catalog.svg) left center;
+  background-image: url(../img/seat/catalog.svg);
 }
