@@ -3,38 +3,28 @@
 }
 
 .variant-button {
-  @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table);
-  margin: 15px auto 30px;
+  @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table,$margin:15px auto 30px);
 }
 
 .back-button {
-  @include button($color:$button,$font-size:15,$display:block);
-  margin: 1rem 0 0 1rem;
-  background: url(../img/volkswagen/arrow.svg) left center;
-  background-repeat: no-repeat;
-  padding-left: 1.5rem;
-}
-
-.ctas .md-button {
-  @include button($color:$black,$font-size:22,$padding:10px 0,$display:block);
-  margin: 0 1rem;
+  @include button($color:$button,$font-size:15,$display:block,$margin:1rem 0 0 1rem);
+  @include arrowLeft;
+  background-image: url(../img/volkswagen/arrow.svg);
 }
 
 .ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-left: 4rem;
-  margin: 1.5rem;
+  @include button($font-size:22,$padding:10px 0,$display:block,$max-width:400px,$margin:1.5rem auto);
+  @include iconLeft;
 }
 
 .leasing-button {
-  background: url(../img/volkswagen/leasing.png) left center;
+  background: url(../img/volkswagen/leasing.png);
 }
 
 .testdrive-button {
-  background: url(../img/volkswagen/probefahrt.png) left center;
+  background: url(../img/volkswagen/probefahrt.png);
 }
 
 .catalog-button {
-  background: url(../img/volkswagen/catalog.png) left center;
+  background: url(../img/volkswagen/catalog.png);
 }
