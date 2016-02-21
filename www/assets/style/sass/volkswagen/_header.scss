@@ -1,0 +1,32 @@
+header {
+  @include fontbold;
+  border-bottom: 1px solid $light-grey;
+  .logo {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/volkswagen/logo.svg);
+  }
+
+  .burger {
+    span {
+      background-color: $black;
+    }
+  }
+
+  .menu {
+    text-align: center;
+    font-size: 0.9rem;
+    a {
+      color: $blue-grey;
+    }
+    li {
+      margin: 0 1.5rem;
+      padding: 1.3rem 0;
+      border-top: 1px solid $light-grey;
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

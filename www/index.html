@@ -67,5 +67,19 @@
 <script src="/app/shared/resources/leadResource.js"></script>
 <script src="/app/shared/resources/leasingResource.js"></script>
 <!-- endinject -->
+
+<!-- Menu Navigation Toggle-->
+<script type="text/javascript">
+  $(document).ready(function() {
+    var menu = $('.menu');
+    var menulink = $('.burger');
+
+    menulink.click(function() {
+      menulink.toggleClass('active');
+      menu.toggleClass('active');
+      return false;
+    });
+  });
+</script>
 </body>
 </html>
