@@ -1,0 +1,29 @@
+header {
+  .logo {
+    width: 63px;
+    height: 35px;
+    background-image: url(../img/seat/logo.svg);
+  }
+
+  .burger {
+    span {
+      background-color: $seat-black;
+    }
+  }
+
+  .menu {
+    a {
+      color: $seat-black;
+    }
+    li {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1.5rem;
+      border-top: 1px solid $lighter-grey;
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
