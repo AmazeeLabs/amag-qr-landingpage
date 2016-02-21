@@ -1,0 +1,32 @@
+header {
+  @include fontextendedbold;
+  .logo {
+    float: right;
+    width: 63px;
+    height: 35px;
+    background-image: url(../img/audi/logo.svg);
+  }
+
+  .burger {
+    float: left;
+    span {
+      background-color: $black;
+    }
+  }
+
+  .menu {
+    a {
+      color: $black;
+    }
+    li {
+      font-size: 0.9rem;
+      margin: 0 1.5rem;
+      padding: 1.3rem 0;
+      border-top: 1px solid $lighter-grey;
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
