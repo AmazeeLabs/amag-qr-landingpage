@@ -1,0 +1,12 @@
+form {
+  legend {
+    @include fontbold;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: rem(25px);
+    margin-bottom: 0.75rem;
+  }
+}

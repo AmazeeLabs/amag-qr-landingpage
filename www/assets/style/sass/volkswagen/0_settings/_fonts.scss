@@ -36,6 +36,11 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+h2 {
+  @include fontbold;
+  font-size: rem(20px);
+}
+
 h3 {
   @include fontnormal;
   font-size: rem(20px);
