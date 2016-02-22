@@ -37,6 +37,9 @@ footer {
     background-image: url(../img/skoda/arrow-right-single.svg);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $grey;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $grey;
+    }
   }
 }
