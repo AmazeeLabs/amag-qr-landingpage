@@ -85,6 +85,10 @@
 // FIELDSET STYLE
 // =============================================================================
 
-.fieldset {
+fieldset {
+  padding: 2.5rem 1rem 1rem;
 
+  label {
+    @include fontbold;
+  }
 }
