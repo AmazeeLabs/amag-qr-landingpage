@@ -12,10 +12,18 @@
       }
     }
 
-    @include breakpoint(min-width 500px) {
+    @include breakpoint(500px 699px) {
       width: 33.333%;
 
       &:nth-of-type(3n+1) {
+        clear: left;
+      }
+    }
+
+    @include breakpoint(min-width 700px) {
+      width: 25%;
+
+      &:nth-of-type(4n+1) {
         clear: left;
       }
     }
