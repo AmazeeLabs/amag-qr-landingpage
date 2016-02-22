@@ -2,7 +2,10 @@
   .md-list-item-text {
     color: $skoda-green;
     .ng-binding {
+      display: block;
+      @include fontbold;
       font-size: rem(16px) !important;
+      text-align: center;
     }
   }
 }
