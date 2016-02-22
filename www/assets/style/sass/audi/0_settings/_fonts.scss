@@ -64,6 +64,12 @@ h1 {
   line-height: rem(38px);
   margin-bottom: 0.5rem;
 }
+h2 {
+  @include fontextendedbold;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  margin-bottom: 1.5rem;
+}
 
 h3 {
   @include fontnormal;
