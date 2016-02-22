@@ -3,6 +3,7 @@
 
     var deps = [
         'ui.router',
+        'app.header',
         'app.imageArea',
         'app.languageSwitch',
         'app.contactForm',
@@ -24,6 +25,9 @@
                     '': {
                         templateUrl: 'app/sites/modelList.html'
                     },
+                    'header@modelList': {
+                        templateUrl: 'app/components/header/_header.html'
+                    },
                     'modelList@modelList': {
                         templateUrl: 'app/components/modelList/_modelList.html'
                     },
@@ -38,6 +42,9 @@
                     '': {
                         templateUrl: 'app/sites/variantList.html'
                     },
+                    'header@variantList': {
+                        templateUrl: 'app/components/header/_header.html'
+                    },
                     'variantList@variantList': {
                         templateUrl: 'app/components/variantList/_variantList.html'
                     },
@@ -51,6 +58,9 @@
                 views: {
                     '': {
                         templateUrl: 'app/sites/landingPage.html'
+                    },
+                    'header@landingPage': {
+                        templateUrl: 'app/components/header/_header.html'
                     },
                     'imageArea@landingPage': {
                         templateUrl: 'app/components/imageArea/_imageArea.html'
@@ -69,6 +79,9 @@
                     '': {
                         templateUrl: 'app/sites/leasingCalculator.html'
                     },
+                    'header@leasingCalculator': {
+                        templateUrl: 'app/components/header/_header.html'
+                    },
                     'imageArea@leasingCalculator': {
                         templateUrl: 'app/components/imageArea/_imageArea.html'
                     },
@@ -85,6 +98,9 @@
                 views: {
                     '': {
                         templateUrl: 'app/sites/mainFormular.html'
+                    },
+                    'header@mainFormular': {
+                        templateUrl: 'app/components/header/_header.html'
                     },
                     'language@mainFormular': {
                         templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
