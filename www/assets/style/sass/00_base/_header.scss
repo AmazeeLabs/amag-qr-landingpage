@@ -48,12 +48,28 @@ header {
     left: 0;
     right: 0;
     top: calc(60px + 1px);
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+
+    a {
+      display: block;
+    }
+
     &.active {
       max-height: 200px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(#434343,0.8);
+      }
     }
   }
 }

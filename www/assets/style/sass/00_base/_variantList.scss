@@ -6,8 +6,18 @@
     float: left;
     width: 50%;
 
+    @include breakpoint(max-width 499px) {
+      &:nth-of-type(2n+1) {
+        clear: left;
+      }
+    }
+
     @include breakpoint(min-width 500px) {
-      width: 30%;
+      width: 33.333%;
+
+      &:nth-of-type(3n+1) {
+        clear: left;
+      }
     }
   }
 }
