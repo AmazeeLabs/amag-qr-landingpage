@@ -1,5 +1,4 @@
 footer {
-  padding: 1.5rem;
   background-color: $footer-background;
   color: $footer-text;
   a {
@@ -8,13 +7,20 @@ footer {
 
   //social media styles
   .social-media {
-    padding-bottom: 1rem;
+    background-color: $black;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     div{
       height: 1.8rem;
       @include span(1 of 4 inside nogutter);
       &.twitter, &.newsletter{
         display: none;
       }
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid $footer-background;
+      padding-top: 1.5rem;
     }
   }
   .facebook {
@@ -32,10 +38,15 @@ footer {
 
   //language switch
   .language {
+    background-color: $black;
+    color: $white;
     position: relative;
+    padding: 1.5rem;
+    @include arrowRight;
+    background-image: url(../img/seat/arrow-right.svg);
+    background-size: 0.6rem;
+    background-position: right 1.5rem center;
     .md-select-value {
-      @include button($bg:$seat-black,$font-size:15,$color:$footer-text,$padding:.8rem);
-      width: calc(100% - 2rem);
     }
     .md-select-menu-container {
       position: absolute;
@@ -48,5 +59,28 @@ footer {
         @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
       }
     }
+  }
+
+  .legal {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    >div {
+      border-bottom: 1px solid $black;
+      position: relative;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    >div:last-child::after {
+      content: 'TECHNOLOGY TO ENJOY';
+      position: absolute;
+      left: 0;
+      bottom: -4.5rem;
+      color: $white;
+      font-size: 2rem;
+      @include fontbold;
+    }
+  }
+  .copyright {
+    padding: 6rem 1.5rem 1.5rem;
   }
 }

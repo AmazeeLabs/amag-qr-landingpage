@@ -15,7 +15,7 @@ header {
     span {
       display: block;
       width: rem(22px);
-      height: 3px;
+      height: 2px;
       margin-bottom: .3rem;
       transition: transform 0.1s linear;
     }
@@ -27,18 +27,18 @@ header {
         transform: translateY(2px);
       }
     }
-    &.active {
+    .active &{
       span {
         transition: transform 0.2s ease-out, opacity 0.1s linear;
       }
       .line-1 {
-        transform: translateY(10px) translateX(0) rotate(45deg);
+        transform: translateY(7px) translateX(0) rotate(45deg);
       }
       .line-2 {
         opacity:0;
       }
       .line-3 {
-        transform: translateY(-9px) translateX(0) rotate(-45deg);
+        transform: translateY(-7px) translateX(0) rotate(-45deg);
       }
     }
   }
@@ -61,7 +61,7 @@ header {
       display: block;
     }
 
-    &.active {
+    .active &{
       max-height: 200px;
 
       &:after {

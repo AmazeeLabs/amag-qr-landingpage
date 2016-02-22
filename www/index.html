@@ -13,7 +13,7 @@
 
     <!-- inject:css -->
     <link rel="stylesheet" href="/assets/style/css/main.css">
-    <link rel="stylesheet" href="/assets/style/css/volkswagen.css">
+    <link rel="stylesheet" href="/assets/style/css/skoda.css">
     <!-- endinject -->
 
 </head>
@@ -75,12 +75,11 @@
 <!-- Menu Navigation Toggle-->
 <script type="text/javascript">
   $(document).ready(function() {
-    var menu = $('.menu');
+    var header = $('.header-wrapper');
     var burger = $('.burger');
 
     burger.click(function() {
-      burger.toggleClass('active');
-      menu.toggleClass('active');
+      header.toggleClass('active');
     });
   });
 </script>
