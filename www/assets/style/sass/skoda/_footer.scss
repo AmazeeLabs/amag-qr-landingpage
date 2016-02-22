@@ -1,8 +1,18 @@
 footer {
-  border-top: 1px solid $lighter-grey;
-  padding: 0px;
-  margin: 2.5rem 1.5rem .5rem;
+  .language, .legal, .copyright {
+    background-color: $footer-background;
+    padding: 1rem;
+  }
+
+  a{
+    color: $footer-text;
+  }
+
+  //social media styles
   .social-media {
+    @include clearfix;
+    margin: 0 1rem;
+    border-top: 1px solid $lighter-grey;
     padding: 1.5rem 0;
     div{
       height: 2.5rem;
@@ -20,5 +30,13 @@ footer {
   }
   .newsletter {
     background: url(../img/skoda/newsletter.png) center center;
+  }
+
+  .legal > div{
+    @include arrowLeft;
+    background-image: url(../img/skoda/arrow-right-single.svg);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $grey;
   }
 }
