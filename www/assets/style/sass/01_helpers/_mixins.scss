@@ -46,3 +46,16 @@
     background-size: 110%;
   }
 }
+
+@mixin audiArrow {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    background: url(../img/audi/arrow-right.svg) bottom center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+  }
+}
