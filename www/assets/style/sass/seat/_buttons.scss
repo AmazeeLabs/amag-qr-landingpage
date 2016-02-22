@@ -6,7 +6,7 @@
 .back-button {
   color: $white;
   text-transform: uppercase;
-  @include arrowLeft;
+  @include arrowLeft($bgPosition:0 1px);
   background-image: url(../img/seat/arrow.svg);
 }
 

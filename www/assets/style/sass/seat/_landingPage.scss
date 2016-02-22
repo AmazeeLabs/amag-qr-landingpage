@@ -17,3 +17,31 @@
 .image-area-top h1, .image-area-top h3{
   color: $seat-black;
 }
+
+.image-area-top {
+  position: relative;
+  margin: 0;
+
+  h1 {
+    z-index: 2;
+    position: absolute;
+    top: rem(40px);
+    right: 1rem;
+    color: $white;
+  }
+
+  h3 {
+    z-index: 2;
+    position: absolute;
+    top: rem(94px);
+    right: 1rem;
+    color: $white;
+  }
+}
+
+.variant-button-wrapper {
+  position: absolute;
+  top: rem(250px);
+  right: 1rem;
+  text-align: right;
+}
