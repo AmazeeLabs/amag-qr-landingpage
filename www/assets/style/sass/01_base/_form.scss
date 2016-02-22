@@ -2,6 +2,8 @@
 // =============================================================================
 
 .form {
+  margin-left: 1rem;
+  margin-right: 1rem;
   .layout-row {
     padding: 0 1rem;
   }
@@ -87,8 +89,5 @@
 
 fieldset {
   padding: 2.5rem 1rem 1rem;
-
-  label {
-    @include fontbold;
-  }
 }
+
