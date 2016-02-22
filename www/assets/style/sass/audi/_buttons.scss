@@ -20,7 +20,8 @@
 .variant-button {
   @include arrowRight;
   background-image: url(../img/audi/arrow-right.svg);
-  @include button($display:block,$max-width:400px,$margin:1rem auto 3rem);
+  @include button($display:inline-block,$max-width:400px,$margin:1rem auto 3rem);
+  padding-right: 22px;
 }
 
 .leasing-button, .testdrive-button, .catalog-button {

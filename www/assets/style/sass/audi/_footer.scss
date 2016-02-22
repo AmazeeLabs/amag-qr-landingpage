@@ -2,13 +2,13 @@ footer {
   background-color: $footer-background;
   color: $footer-text;
     .social-media {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     div{
-      height: 3rem;
-      width: 3rem;
+      height: rem(36px);
+      width: rem(36px);
       margin-right: .5rem;
       background-color: $black;
-      background-size: 2.5rem;
+      background-size: 1.9rem;
       &.instagram, &.twitter, &.newsletter, &.youtube{
         display: none;
       }
@@ -28,10 +28,12 @@ footer {
   .language {
     position: relative;
     .md-select-value {
-      @include button($bg:$light-grey-30,$font-size:15,$color:$black,$padding:.8rem,$display:table,$margin:30px auto,$max-width:300px);
-      width: calc(100% - 2rem);
+      @include button($bg:$light-grey-30,$font-size:15,$color:$black,$padding:.8rem,$display:table,$margin:30px auto,$max-width:100%);
+      width: 100%; //calc(100% - 2rem);
       @include arrowRight;
-      background-image:url(../img/audi/arrow-down-black.svg);
+      background-image:url(../img/audi/arrow-dropdown.svg);
+      background-size: 14px auto;
+      background-position: right 10px center;
     }
     .md-select-menu-container {
       position: absolute;

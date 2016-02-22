@@ -1,5 +1,6 @@
 header {
   height: rem(60px);
+  padding: 0 1rem;
   .logo {
     float: left;
     display: block;
@@ -10,11 +11,12 @@ header {
 
   .burger {
     float: right;
+    margin-top: 20px;
     span {
       display: block;
-      width: 2rem;
+      width: rem(22px);
       height: 3px;
-      margin-bottom: .4rem;
+      margin-bottom: .3rem;
       transition: transform 0.1s linear;
     }
     &:hover {

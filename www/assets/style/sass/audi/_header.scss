@@ -12,7 +12,9 @@ header {
 
   .burger {
     float: left;
+    margin-top: 6px;
     span {
+      height: 2px;
       background-color: $black;
     }
   }
