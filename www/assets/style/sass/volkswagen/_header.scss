@@ -1,6 +1,5 @@
 header {
   @include fontbold;
-  // padding: 0 1rem;
   border-bottom: 1px solid $line;
   .logo {
     width: 36px;
@@ -10,10 +9,7 @@ header {
   }
 
   .burger {
-    // margin-top: 20px;
     span {
-      // width: rem(22px);
-      height: 2px;
       background-color: $black;
     }
   }

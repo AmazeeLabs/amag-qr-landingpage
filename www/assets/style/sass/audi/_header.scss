@@ -14,7 +14,6 @@ header {
     float: left;
     margin-top: 6px;
     span {
-      height: 2px;
       background-color: $black;
     }
   }
@@ -27,11 +26,13 @@ header {
       font-size: 0.9rem;
       margin: 0 1.5rem;
       padding: 1.5rem 0;
-      border-top: 1px solid $light-line;
       background-size: .6rem;
       &:hover {
         color: $black;
       }
+    }
+    a:not(:first-child) li {
+      border-top: 1px solid $lighter-grey;
     }
   }
 }
