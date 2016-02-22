@@ -12,19 +12,19 @@
   background-image: url(../img/volkswagen/arrow.svg);
 }
 
-.ctas .leasing-button, .ctas .testdrive-button, .ctas .catalog-button {
+.leasing-button, .testdrive-button, .catalog-button {
   @include button($font-size:22,$padding:10px 0,$display:block,$max-width:400px,$margin:1rem auto);
   @include iconLeft(2.85rem,$bgPosition:0 8px);
 }
 
-.ctas .leasing-button {
+.leasing-button {
   background-image: url(../img/volkswagen/leasing.png);
 }
 
-.ctas .testdrive-button {
+.testdrive-button {
   background-image: url(../img/volkswagen/probefahrt.png);
 }
 
-.ctas .catalog-button {
+.catalog-button {
   background-image: url(../img/volkswagen/catalog.png);
 }
