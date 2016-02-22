@@ -9,7 +9,7 @@
   .md-3-line {
     float: left;
     width: 50%;
-    padding: 0 .5rem 2rem .5rem;
+    padding: 0 .5rem 1.5rem .5rem;
 
     @include breakpoint(max-width 499px) {
       &:nth-of-type(2n+1) {
@@ -44,5 +44,13 @@
   h1, h3 {
     padding-left: .5rem;
     padding-right: .5rem;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  .layout-column {
+    padding-top: .75rem;
   }
 }
