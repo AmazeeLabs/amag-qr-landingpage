@@ -6,30 +6,30 @@
   }
 }
 
-@mixin arrowLeft {
-  background-position: left center;
+@mixin arrowLeft($padding:1.5rem,$bgSize:.8rem,$bgPosition:left center) {
+  background-position: $bgPosition;
   background-repeat: no-repeat;
-  background-size: .8rem;
-  padding-left: 1.5rem;
+  background-size: $bgSize;
+  padding-left: $padding;
 }
 
-@mixin arrowRight {
-  background-position: right center;
+@mixin arrowRight($padding:1.5rem,$bgSize:.8rem,$bgPosition:right center) {
+  background-position: $bgPosition;
   background-repeat: no-repeat;
-  background-size: .8rem;
-  padding-right: 1.5rem;
+  background-size: $bgSize;
+  padding-right: $padding;
 }
 
-@mixin iconLeft {
-  background-position: left center;
+@mixin iconLeft($padding:4rem,$bgSize:2.2rem,$bgPosition:left center) {
+  background-position: $bgPosition;
   background-repeat: no-repeat;
-  background-size: 2.2rem;
-  padding-left: 4rem;
+  background-size: $bgSize;
+  padding-left: $padding;
 }
 
-@mixin iconRight {
-  background-position: right center;
+@mixin iconRight($padding:4rem,$bgSize:2.2rem,$bgPosition:right center) {
+  background-position: $bgPosition;
   background-repeat: no-repeat;
-  background-size: 2.2rem;
-  padding-right: 4rem;
+  background-size: $bgSize;
+  padding-right: $padding;
 }

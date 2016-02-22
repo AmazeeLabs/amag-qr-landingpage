@@ -1,14 +1,19 @@
 header {
   @include fontbold;
-  border-bottom: 1px solid $light-grey;
+  padding: 0 1rem;
+  border-bottom: 1px solid $line;
   .logo {
     width: 36px;
     height: 36px;
+    margin-top: 11px;
     background-image: url(../img/volkswagen/logo.svg);
   }
 
   .burger {
+    margin-top: 20px;
     span {
+      width: rem(22px);
+      height: 2px;
       background-color: $black;
     }
   }
