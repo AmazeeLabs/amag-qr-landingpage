@@ -109,15 +109,18 @@
                 <div layout="column" layout-wrap layout-xs="row" layout-gt-xs="row">
                     <div flex-gt-xs="50" flex-xs="60">
                         <md-checkbox id="checkbox-catalog" ng-model="data.catalog" aria-label="Checkbox 1" class="md-primary" required>
+                            <input type="checkbox"></input>
                             <span translate="CONTACT_CATALOG"></span>
                         </md-checkbox>
                     </div>
                     <div flex-gt-xs="50" flex-xs="40">
                         <md-radio-group ng-model="data.catalogTyp">
                             <md-radio-button name="radio-catalog" value="electronic" class="md-primary" ng-disabled="!data.catalog">
+                                <input type="radio"></input>
                                 <span translate="CONTACT_CATALOG_ELECTRONIC"></span>
                             </md-radio-button>
                             <md-radio-button name="radio-catalog" value="printed" class="md-primary" ng-disabled="!data.catalog">
+                                <input type="radio"></input>
                                 <span translate="CONTACT_CATALOG_PRINTED"></span>
                             </md-radio-button>
                         </md-radio-group>
@@ -131,6 +134,7 @@
                     <!--<div flex-gt-xs="50" flex-xs="60">-->
                     <div flex="100">
                         <md-checkbox id="checkbox-testdrive" ng-model="data.testdrive" aria-label="Checkbox 1" class="md-primary">
+                            <input type="checkbox"></input>
                             <span translate="CONTACT_TESTDRIVE"></span>
                         </md-checkbox>
                     </div>
@@ -167,6 +171,7 @@
                 <legend translate="CONTACT_LEGEND_NEWSLETTER"></legend>
                 <div flex-gt-xs flex="100">
                     <md-checkbox id="checkbox-newsletter" ng-model="data.newsletter" aria-label="Checkbox 1" class="md-primary" required>
+                        <input type="checkbox"></input>
                         <span translate="CONTACT_NEWSLETTER"> </span>
                     </md-checkbox>
                 </div>
@@ -175,6 +180,7 @@
                 <legend translate="CONTACT_LEGEND_PRIVACY"></legend>
                 <div flex-gt-xs flex="100">
                     <md-checkbox id="checkbox-privacy" ng-model="data.privacyAccepted" aria-label="Checkbox 1" class="md-primary">
+                        <input type="checkbox"></input>
                         <span translate="CONTACT_PRIVACY"> </span>
                     </md-checkbox>
                     <!--<div ng-show="!data.privacyAccepted && data.privacyAccepted !== ''">
