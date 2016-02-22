@@ -40,3 +40,7 @@ fieldset {
     border-color: $form-line !important;
   }
 }
+
+.form .layout-row.total-outer-wrapper {
+  border-bottom: 2px solid $form-line !important;
+}
