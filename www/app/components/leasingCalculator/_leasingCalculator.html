@@ -1,5 +1,6 @@
 <div layout="column" ng-controller="LeasingCalculatorFormCtrl">
     <div>
+        <h1>Leasing Rechner</h1>
         <div layout="row" class="slider">
             <span translate="LEASINGCALC_PAYMENT"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.payment}} {{'LEASINGCALC_PAYMENT_FRANCS'|translate}}</span>
@@ -32,7 +33,7 @@
             </md-checkbox>
         </fieldset>
 
-        <div layout="row">
+        <div layout="row" class="total-outer-wrapper">
             <h4>{{'LEASINGCALC_INTERESTRATE'|translate}}</h4>
             <p class="zins nominal">{{'LEASINGCALC_INTERESTRATE_NOMINAL'|translate}} <b>{{data.interestRateDefault}}%</b></p>
             <p class="zins effektiv">{{'LEASINGCALC_INTERESTRATE_EFFEKTIVE'|translate}} <b>{{data.interestRateEffektive}}%</b></p>

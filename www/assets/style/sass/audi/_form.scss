@@ -32,6 +32,10 @@ fieldset {
 }
 
 .form {
+  h1 {
+    font-size: rem(22px);
+  }
+
   .layout-row {
     border-color: $form-line !important;
   }
