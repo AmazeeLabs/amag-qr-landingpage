@@ -1,16 +1,3 @@
-form {
-  legend {
-    @include fontbold;
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    text-align: center;
-    margin-top: rem(25px);
-    margin-bottom: 0.75rem;
-  }
-}
-
 .form {
   .ng-binding {
     @include fontbold;
@@ -19,11 +6,11 @@ form {
 }
 
 .md-track, .md-thumb-container {
-  background: $slider-bg;
+  background: $light-grey;
 }
 
 .md-track-fill, .md-thumb {
-  background: $vw-blue;
+  background: $skoda-green;
 }
 
 .md-thumb {

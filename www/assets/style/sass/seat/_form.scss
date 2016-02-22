@@ -1,0 +1,42 @@
+.form {
+  .ng-binding {
+    @include fontbold;
+    font-size: rem(15px);
+  }
+}
+
+.md-track, .md-thumb-container {
+  background: $slider-bg;
+  border-radius: 7.5px;
+}
+
+.md-track, .md-track-container {
+  height: 15px;
+}
+
+.md-track-fill, .md-thumb {
+  background: $seat-red;
+}
+
+.md-thumb {
+  top: 21px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  &:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    background: $slider-bg;
+    border-radius: 50%;
+  }
+}
+
+.md-track-container {
+  border-radius: 4px;
+}

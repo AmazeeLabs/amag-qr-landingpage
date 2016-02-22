@@ -1,0 +1,74 @@
+.form {
+  .layout-row {
+    padding: 0 1rem;
+  }
+
+  .ng-binding {
+    float: right;
+  }
+}
+
+.ng-isolate-scope {
+  position: relative;
+  display: block;
+  width: calc(100% - 20px);
+  height: 50px;
+  padding-left: 0 !important;
+  margin: 0 10px;
+}
+
+.ng-isolate-scope:focus {
+  outline: none;
+}
+
+.md-slider-wrapper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.md-track, .md-thumb-container, .md-thumb {
+  position: absolute;
+}
+
+.md-track {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.md-track-container {
+  position: relative;
+  width: calc(100% + 20px);
+  left: -10px;
+  top: 15px;
+  overflow: hidden;
+}
+
+.md-thumb-container {
+  top: 0;
+  left: 0;
+}
+
+.md-thumb {
+  top: 7px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+}
+
+.md-track, .md-track-container {
+  height: 5px;
+}
+
+.md-track, .md-thumb-container {
+  background: grey;
+}
+
+.md-track-fill, .md-thumb {
+  background: red;
+}
+
+.md-thumb-text {
+  display: none;
+}
