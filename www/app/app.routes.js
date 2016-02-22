@@ -3,6 +3,7 @@
 
     var deps = [
         'ui.router',
+        'app.footer',
         'app.header',
         'app.imageArea',
         'app.languageSwitch',
@@ -33,6 +34,9 @@
                     },
                     'language@modelList': {
                         templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
+                    },
+                    'footer@modelList': {
+                        templateUrl: 'app/components/footer/_footer.html'
                     }
                 }
             })
@@ -50,6 +54,9 @@
                     },
                     'language@variantList': {
                         templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
+                    },
+                    'footer@variantList': {
+                        templateUrl: 'app/components/footer/_footer.html'
                     }
                 }
             })
@@ -70,6 +77,9 @@
                     },
                     'language@landingPage': {
                         templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
+                    },
+                    'footer@landingPage': {
+                        templateUrl: 'app/components/footer/_footer.html'
                     }
                 }
             })
@@ -90,6 +100,9 @@
                     },
                     'language@leasingCalculator': {
                         templateUrl: 'app/components/languageSwitch/_languageSwitch.html'
+                    },
+                    'footer@leasingCalculator': {
+                        templateUrl: 'app/components/footer/_footer.html'
                     }
                 }
             })
@@ -110,6 +123,9 @@
                     },
                     'contactForm@mainFormular': {
                         templateUrl: 'app/components/contactForm/_contactForm.html'
+                    },
+                    'footer@mainFormular': {
+                        templateUrl: 'app/components/footer/_footer.html'
                     }
                 }
             })
