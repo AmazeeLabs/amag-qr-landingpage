@@ -54,6 +54,10 @@ body {
   @include fontnormal;
 }
 
+b {
+ @include fontbold;
+}
+
 h1 {
   @include fontextendedbold;
   font-size: rem(34px);
@@ -64,5 +68,11 @@ h1 {
 h3 {
   @include fontnormal;
   font-size: rem(20px);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  @include fontnormal;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }

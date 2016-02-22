@@ -1,4 +1,4 @@
-.form {
+.slider {
   .ng-binding {
     @include fontbold;
     font-size: rem(15px);
@@ -19,4 +19,20 @@
 
 .md-track-container {
   border-radius: 4px;
+}
+
+fieldset {
+  legend {
+    @include fontextendedbold;
+  }
+}
+.total-value {
+  @include fontbold;
+  color: $audi-red;
+}
+
+.form {
+  .layout-row {
+    border-color: $form-line !important;
+  }
 }

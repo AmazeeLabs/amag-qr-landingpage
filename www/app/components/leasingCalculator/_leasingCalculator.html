@@ -1,36 +1,30 @@
 <div layout="column" ng-controller="LeasingCalculatorFormCtrl">
     <div>
-        <div layout="row">
+        <div layout="row" class="slider">
             <span translate="LEASINGCALC_PAYMENT"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.payment}} {{'LEASINGCALC_PAYMENT_FRANCS'|translate}}</span>
-        </div>
-        <div layout="row">
             <md-slider style="padding-left:15px;" flex="95" step="100" min="0" max="25500" ng-model="data.payment"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
 
-        <div layout="row">
+        <div layout="row" class="slider">
             <span translate="LEASINGCALC_DURATION"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.duration}} {{'LEASINGCALC_DURATION_MONTH'|translate}}</span>
-        </div>
-        <div layout="row">
             <md-slider style="padding-left:15px;" flex="95" step="12" min="12" max="60" ng-model="data.duration"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
 
-        <div layout="row">
+        <div layout="row" class="slider">
             <span translate="LEASINGCALC_MILAGE"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.milage}} {{'LEASINGCALC_MILAGE_KILOMETER'|translate}}</span>
-        </div>
-        <div layout="row">
             <md-slider style="padding-left:15px;" flex="95" step="5000" min="10000" max="50000" ng-model="data.milage"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
 
-        <fieldset class="standard contact-fieldset">
+        <fieldset class="standard contact-fieldset layout-row">
             <legend translate="LEASINGCALC_OFFER"></legend>
             <md-checkbox id="checkbox-discount" ng-model="data.discount" aria-label="checkbox" ng-repeat="row in global.params.leasingPromotions"
                          class="md-primary checkbox-inline" >
@@ -38,31 +32,24 @@
             </md-checkbox>
         </fieldset>
 
-        <br/>
-
         <div layout="row">
-            <div flex="50">
-                <span><b>{{'LEASINGCALC_INTERESTRATE'|translate}}</b></span><br />
-                <span>{{'LEASINGCALC_INTERESTRATE_NOMINAL'|translate}}&nbsp;{{data.interestRateDefault}}%</span><br />
-                <span>{{'LEASINGCALC_INTERESTRATE_EFFEKTIVE'|translate}}&nbsp;{{data.interestRateEffektive}}%</span>
-            </div>
-            <div flex="50">
-                <span style="font-weight: bold" translate="LEASINGCALC_MOTHLY_PAYMENT"></span><br>
-                <span style="font-weight: bold; font-size: 25px; color:green" >{{'LEASINGCALC_CHF' | translate}}&nbsp;{{result}}</span>
-            </div>
+            <h4>{{'LEASINGCALC_INTERESTRATE'|translate}}</h4>
+            <p class="zins nominal">{{'LEASINGCALC_INTERESTRATE_NOMINAL'|translate}} <b>{{data.interestRateDefault}}%</b></p>
+            <p class="zins effektiv">{{'LEASINGCALC_INTERESTRATE_EFFEKTIVE'|translate}} <b>{{data.interestRateEffektive}}%</b></p>
         </div>
-
-        <br/>
-
         <div layout="row">
+            <div class="total-wrapper">
+                <span class="total" translate="LEASINGCALC_MOTHLY_PAYMENT"></span>
+                <span class="total-value" >{{'LEASINGCALC_CHF' | translate}}&nbsp;{{result}}</span>
+            </div>
+
             <md-button type="button" ng-click="calculate()" class="md-raised md-primary" flex="100"
                        translate="LEASINGCALC_CALCULATE"
                        aria-label="Calculate"></md-button>
-        </div>
-        <div layout="row">
-            <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised" flex="50"
+
+            <!-- <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised" flex="50"
                        translate="LEASINGCALC_BUTTON_BACK"
-                       aria-label="Back"></md-button>
+                       aria-label="Back"></md-button> -->
             <md-button type="button" href="#/mainFormular/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}/leasing" class="md-raised" flex="50" translate="LEASINGCALC_CONTACT"
                        aria-label="Next"></md-button>
         </div>
