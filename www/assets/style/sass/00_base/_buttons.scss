@@ -4,6 +4,9 @@
 }
 
 .md-button {
+  appearance: none;
+  background: none;
+  border: none;
   .md-ripple-container {
     display: none !important;
   }

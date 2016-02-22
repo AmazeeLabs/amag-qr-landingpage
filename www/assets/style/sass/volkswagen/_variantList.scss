@@ -1,8 +1,7 @@
 .variantlist {
-  padding: 1rem;
   .md-list-item-text {
+    text-align: left;
     color: $black;
-
     .ng-binding {
       font-size: rem(16px) !important;
     }
