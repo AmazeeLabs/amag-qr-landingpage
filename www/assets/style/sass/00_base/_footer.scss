@@ -1,8 +1,11 @@
 footer {
-  .social-media > div{
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .social-media {
+    @include clearfix;
+    > div{
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
   &:after {
     @include clearfix;
