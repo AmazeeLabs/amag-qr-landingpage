@@ -1,7 +1,13 @@
 footer {
+  padding: 1.5rem;
   background-color: $footer-background;
   color: $footer-text;
-    .social-media {
+  a {
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
     padding-bottom: 1rem;
     div{
       height: 1.8rem;
@@ -36,8 +42,8 @@ footer {
       width: 100%;
       top: calc(.8rem + 30px);
       left: 0;
-      // height: 0;
-      // overflow: hidden;
+      height: 0;
+      overflow: hidden;
       .language-options {
         @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
       }

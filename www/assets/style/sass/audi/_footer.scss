@@ -1,7 +1,13 @@
 footer {
+  padding: 1.5rem;
   background-color: $footer-background;
   color: $footer-text;
-    .social-media {
+  a {
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
     padding-bottom: 0;
     div{
       height: rem(36px);
@@ -19,9 +25,6 @@ footer {
   }
   .google{
     background: url(../img/audi/google.svg) center center;
-  }
-  a {
-    color: $footer-text;
   }
 
   //language switch
@@ -59,7 +62,6 @@ footer {
   }
 
   .copyright {
-    font-size: 0.75rem;
     margin-top: 1.5rem;
     color: $light-grey;
   }
