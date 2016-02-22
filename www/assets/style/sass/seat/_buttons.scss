@@ -34,3 +34,15 @@
 .catalog-button {
   background-image: url(../img/seat/catalog.svg);
 }
+
+.form button.md-primary {
+  @include button($bg:$seat-red,$font-size:14px,$color:$white,$padding:.8rem 1.2rem,$display:block,$margin:.2rem auto 1rem);
+  width: 100%;
+}
+
+.form a.md-none-theme {
+  @include button($font-size:14px,$color:$text,$padding:.8rem 1.2rem,$display:block,$margin:.2rem auto);
+  width: auto;
+  text-align: center;
+  border: 1px solid grey;
+}

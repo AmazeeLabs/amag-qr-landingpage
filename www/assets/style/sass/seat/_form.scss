@@ -1,8 +1,12 @@
-.form {
+.slider {
   .ng-binding {
     @include fontbold;
     font-size: rem(15px);
   }
+}
+
+.ng-isolate-scope {
+  height: 60px;
 }
 
 .md-track, .md-thumb-container {
@@ -39,4 +43,25 @@
 
 .md-track-container {
   border-radius: 4px;
+}
+
+.total-value {
+  @include fontbold;
+  color: $seat-red;
+}
+
+.form {
+  .layout-row {
+    border-color: $form-line !important;
+  }
+}
+
+.form h1 {
+  @include fontlight;
+  font-size: rem(27px);
+  text-transform: uppercase;
+  color: $text;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid $form-line;
 }

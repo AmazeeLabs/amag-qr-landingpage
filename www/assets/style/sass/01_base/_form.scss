@@ -10,7 +10,7 @@
     margin-bottom: 1.5rem;
     @include clearfix;
 
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       border-bottom: 1px solid grey;
     }
   }
