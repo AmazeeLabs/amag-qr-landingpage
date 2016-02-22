@@ -20,4 +20,45 @@ footer {
   .google{
     background: url(../img/audi/google.svg) center center;
   }
+  a {
+    color: $footer-text;
+  }
+
+  //language switch
+  .language {
+    position: relative;
+    .md-select-value {
+      @include button($bg:$light-grey-30,$font-size:15,$color:$black,$padding:.8rem,$display:table,$margin:30px auto,$max-width:300px);
+      width: calc(100% - 2rem);
+      @include arrowRight;
+      background-image:url(../img/audi/arrow-down-black.svg);
+    }
+    .md-select-menu-container {
+      position: absolute;
+      width: 100%;
+      top: calc(.8rem + 30px);
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      .language-options {
+        @include button($bg:$light-grey-30,$font-size:15,$color:$black,$display:block,$padding:.8rem,$margin:0px auto,$max-width:300px);
+      }
+    }
+  }
+
+  //impressum, terms and legal styles
+  .legal > div{
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    border-top: 1px solid $footer-line;
+    &:last-child {
+      border-bottom: 1px solid $footer-line;
+    }
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+    color: $light-grey;
+  }
 }

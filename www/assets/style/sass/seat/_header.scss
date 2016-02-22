@@ -1,17 +1,23 @@
+$header-height: 66px;
+
 header {
+  margin: 0px 1rem;
+  height: $header-height;
   .logo {
-    width: 63px;
-    height: 35px;
-    background-image: url(../img/seat/logo.svg);
+    width: 121px;
+    height: $header-height;
+    background-image: url(../img/seat/logo.png);
   }
 
   .burger {
+    margin-top: calc((66px - (9px + .8rem))/2);
     span {
       background-color: $seat-black;
     }
   }
 
   .menu {
+    top: $header-height;
     a {
       color: $seat-black;
     }
