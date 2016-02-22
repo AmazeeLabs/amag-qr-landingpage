@@ -3,7 +3,13 @@ header {
   background-image: linear-gradient(90deg, rgb(229,234,238) 0%, rgb(255,255,255) 60%);
   padding: 1rem;
   border-bottom: 1px solid $lighter-grey-30;
+
+  nav {
+    padding-top: 1rem;
+  }
+
   .logo {
+    margin-top: 1rem;
     float: right;
     width: 203px;
     height: 25px;
