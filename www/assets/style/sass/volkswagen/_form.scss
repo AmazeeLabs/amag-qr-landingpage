@@ -11,37 +11,43 @@ form {
   }
 }
 
-.form {
+.slider {
   .ng-binding {
     @include fontbold;
     font-size: rem(15px);
   }
-  md-input-container {
-    position: relative;
-  }
-  input {
-    width: 100%;
-    margin-top: 1rem;
-    height: 3rem;
-    border: 1px solid $light-grey;
-    border-radius: 3px;
-  }
-  label {
-    position: absolute;
-    left: 1rem;
-    top: 0;
-    color: $grey;
-    &:hover {
-      cursor: text;
-    }
-  }
-  .md-input-focused label{
-    display: none;
-  }
-  .md-input-message-animation {
-    font-size: rem(12px);
+}
+
+md-input-container {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  margin-top: 1rem;
+  height: 3rem;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+}
+
+label {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  color: $grey;
+  &:hover {
+    cursor: text;
   }
 }
+
+.md-input-focused label{
+  display: none;
+}
+
+.md-input-message-animation {
+  font-size: rem(12px);
+}
+
 button[type=submit], .back-button-form {
   width: calc(100% - 2rem);
   text-transform: uppercase;
@@ -72,4 +78,31 @@ button[type=submit] {
 
 .md-track-container {
   border-radius: 4px;
+}
+
+
+.total-value {
+  @include fontbold;
+  color: $vw-green;
+}
+
+.form {
+  .layout-row {
+    border-color: $form-line !important;
+  }
+
+  h1 {
+    font-size: rem(22px);
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .slider .ng-scope, legend.ng-scope, h4.ng-binding, .total {
+    @include fontbold;
+    color: $black;
+  }
+}
+
+.form .layout-row.total-outer-wrapper {
+  border-bottom: 2px solid $form-line !important;
 }

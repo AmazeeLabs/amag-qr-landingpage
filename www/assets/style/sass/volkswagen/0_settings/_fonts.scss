@@ -30,6 +30,10 @@ body {
   @include fontnormal;
 }
 
+b {
+  @include fontbold;
+}
+
 h1 {
   @include fontbold;
   font-size: rem(32px);
@@ -44,5 +48,9 @@ h2 {
 h3 {
   @include fontnormal;
   font-size: rem(20px);
+  margin-bottom: 1rem;
+}
+
+h4 {
   margin-bottom: 1rem;
 }

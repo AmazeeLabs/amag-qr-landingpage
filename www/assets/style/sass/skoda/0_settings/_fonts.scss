@@ -33,6 +33,10 @@ body {
   color: $text;
 }
 
+b {
+  @include fontbold;
+}
+
 h1 {
   @include fontextrabold;
   color: $black;

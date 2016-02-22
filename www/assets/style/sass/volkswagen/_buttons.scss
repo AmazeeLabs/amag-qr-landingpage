@@ -4,6 +4,7 @@
 
 .variant-button {
   @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table,$margin:15px auto 30px);
+  @include fontbold;
 }
 
 .back-button {
@@ -27,4 +28,18 @@
 
 .catalog-button {
   background-image: url(../img/volkswagen/catalog.png);
+}
+
+.form button.md-primary {
+  @include button($bg:$vw-blue,$color:$white,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$border-radius:3px);
+  width: 100%;
+  @include fontbold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form a.md-none-theme {
+  @include button($bg:$secondary-button,$color:$black,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$border-radius:3px);
+  width: 100%;
+  text-align: center;
 }
