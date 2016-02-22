@@ -1,5 +1,6 @@
 .variantlist {
   .md-list-item-text {
+    @include fontbold;
     text-align: left;
     color: $black;
     .ng-binding {
