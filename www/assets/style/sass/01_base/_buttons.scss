@@ -12,6 +12,7 @@
   }
 }
 
-button, .md-button {
-  outline: none;
+button, .md-button, .md-focused, .md-focused:focus {
+  cursor: pointer;
+  outline: none !important;
 }
