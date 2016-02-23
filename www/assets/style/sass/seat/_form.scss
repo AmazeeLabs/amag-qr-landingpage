@@ -134,4 +134,7 @@ md-radio-button[aria-disabled="true"] .md-label {
   &:not(:last-of-type) {
     border-bottom: 1px solid $lighter-grey;
   }
+  span {
+    top: 4px;
+  }
 }
