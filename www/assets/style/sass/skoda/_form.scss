@@ -90,3 +90,11 @@ md-radio-button[aria-disabled="true"] .md-label {
     border: 1px solid $lighter-grey;
   }
 }
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
+  }
+}

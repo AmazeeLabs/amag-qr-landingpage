@@ -64,6 +64,17 @@ md-radio-button[aria-disabled="true"] .md-label {
   }
 }
 
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $blue-light-grey;
+  }
+}
+
+// BASIC STYLES
+// =============================================================================
 .md-input-message-animation {
   font-size: rem(12px);
 }

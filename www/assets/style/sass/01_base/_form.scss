@@ -227,7 +227,7 @@ md-radio-group:focus {
   }
 }
 
-// LEASING FORM FIELDSET STYLE
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
 // =============================================================================
 
 .contact-form fieldset.contact-fieldset {
@@ -238,6 +238,11 @@ md-radio-group:focus {
   }
   span {
     font-size: rem(14px);
+    display: block;
+    float: left;
+    left: 25px;
+    top: 2px;
+    position: relative;
   }
 }
 
