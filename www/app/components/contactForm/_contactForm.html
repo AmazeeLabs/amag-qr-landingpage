@@ -1,12 +1,12 @@
 <div layout="column" ng-controller="ContactFormCtrl">
     <div>
         <form name="userForm"  novalidate>
-            <h2>Kontakt</h2>
+            <h1>Kontakt</h1>
             <fieldset class="standard contact-fieldset">
                 <legend translate="CONTACT_LEGEND_CUSTOMER_DATA"></legend>
 
                 <div layout-gt-sm="row">
-                    <md-input-container>
+                    <md-input-container class="select">
                         <label translate="CONTACT_SALUTATION"></label>
                         <md-select id="selectSalutation" name="salutation" ng-model="data.salutation"  required>
                             <md-option id="selectSalutationOption" ng-click="salutationSelect()" ng-repeat="salutation in salutations" value="{{salutation.value}}">

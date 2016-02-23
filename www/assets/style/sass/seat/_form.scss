@@ -87,6 +87,7 @@ md-checkbox .md-label {
     border: 1px solid $grey;
   }
 }
+
 md-checkbox[aria-checked="true"] .md-label {
   &:before {
     background-color: $seat-red;
@@ -105,13 +106,40 @@ md-radio-button .md-label {
     border: 1px solid $grey;
   }
 }
+
 md-radio-button[aria-checked="true"] .md-label {
   &:before {
     border: 5px solid $seat-black;
   }
 }
+
 md-radio-button[aria-disabled="true"] .md-label {
   &:before {
     border: 1px solid $lighter-grey;
+  }
+}
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $form-line;
+  border-radius: 3px;
+  background: url(../img/seat/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    line-height: 3rem;
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $form-line;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
   }
 }
