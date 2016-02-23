@@ -347,10 +347,10 @@ md-input-container {
   }
 }
 
-md-select-menu:not(.md-overflow) md-content {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+// md-select-menu:not(.md-overflow) md-content {
+//   padding-top: 8px;
+//   padding-bottom: 8px;
+// }
 
 md-select-menu md-content {
   min-width: 136px;
@@ -384,6 +384,9 @@ md-select-menu {
   md-option {
     .md-text {
       padding: 1rem;
+    }
+    &:not(:last-child) .md-text {
+      border-bottom: 1px solid #eee;
     }
     .md-ripple-container {
       display: none;
