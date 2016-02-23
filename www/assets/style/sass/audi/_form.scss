@@ -106,6 +106,8 @@ md-radio-button[aria-disabled="true"] .md-label {
     border: 2px solid $lighter-grey;
   }
 }
+
+
 // CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
 // =============================================================================
 
@@ -115,8 +117,34 @@ md-radio-button[aria-disabled="true"] .md-label {
   }
 }
 
+
 // Error Styles
 // =============================================================================
 .error-text {
   color: $audi-red;
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $form-line;
+  border-radius: 3px;
+  background: url(../img/audi/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $form-line;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
 }
