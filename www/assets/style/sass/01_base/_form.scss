@@ -62,6 +62,10 @@ md-checkbox .md-label {
     width: 20px;
     height: 20px;
   }
+  span {
+    display: inline-block;
+    margin-left: 30px;
+  }
 }
 md-checkbox[aria-checked="true"] .md-label {
   &:before {
