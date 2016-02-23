@@ -22,37 +22,47 @@
   border-radius: 7.5px;
 }
 
+&.md-min {
+  .md-track-fill {
+    &:after {
+      right: -15px;
+    }
+
+    &:before {
+      right: -11px;
+    }
+  }
+}
+
 .md-track-fill {
+  position: relative;
   &:after {
     content: "";
     display: block;
-    position: relative;
-    right: -10px;
-    float: right;
-    width: 20px;
+    position: absolute;
+    right: 0;
+    width: 40px;
     height: 15px;
     background: $seat-red;
     border-radius: 7.5px;
   }
-}
 
-.md-thumb {
-  top: 21px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-
-  &:after {
+  &:before {
+    z-index: 2;
     content: "";
     display: block;
-    position: relative;
+    position: absolute;
     top: 4px;
-    left: 4px;
+    right: 4px;
     width: 7px;
     height: 7px;
     background: $slider-bg;
     border-radius: 50%;
   }
+}
+
+.md-thumb {
+  display: none;
 }
 
 .md-track-container {
