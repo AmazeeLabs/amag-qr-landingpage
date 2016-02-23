@@ -39,11 +39,14 @@ fieldset {
   .layout-row {
     border-color: $form-line !important;
   }
+  fieldset legend {
+    @include fontextendedbold;
+  }
 }
 
 // TEXT INPUT
 // =============================================================================
-input[type=text] {
+input[type=text], input[type=number] {
   border: 1px solid $grey;
   .md-input-focused & {
     border-color: $audi-red;

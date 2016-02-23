@@ -68,6 +68,9 @@
   .layout-row {
     border-color: $form-line !important;
   }
+  fieldset legend {
+    @include fontbold;
+  }
 }
 
 .form h1 {
@@ -82,7 +85,7 @@
 
 // TEXT INPUT
 // =============================================================================
-input[type=text] {
+input[type=text],input[type=number] {
     border: 1px solid $grey;
     .md-input-focused & {
       border-color: $seat-red;
