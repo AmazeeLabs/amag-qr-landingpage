@@ -19,7 +19,7 @@
                     </md-input-container>
                 </div>
 
-                <div layout-gt-sm="row">
+                <div layout-gt-sm="row" class="form-name-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_FIRSTNAME"></label>
                         <input type="text" name="firstName" ng-model="data.firstName" required>
@@ -40,7 +40,7 @@
                         </div>
                     </md-input-container>
                 </div>
-                <div layout-gt-sm="row">
+                <div layout-gt-sm="row" class="form-street-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_STREET"></label>
                         <input type="text" ng-model="data.street" required>
@@ -60,7 +60,7 @@
                         </div>
                     </md-input-container>
                 </div>
-                <div layout-gt-sm="row">
+                <div layout-gt-sm="row" class="form-place-wrapper">
                     <md-input-container class="md-block" flex-xs-sm>
                         <label translate="CONTACT_ZIP"></label>
                         <input type="number" ng-model="data.zip" required>
@@ -80,7 +80,7 @@
                         </div>
                     </md-input-container>
                 </div>
-                <div layout-gt-sm="row">
+                <div layout-gt-sm="row" class="form-phone-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_TELEPHONE"></label>
                         <input type="text" ng-model="data.telephone" required>
@@ -91,7 +91,7 @@
                         </div>
                     </md-input-container>
                 </div>
-                <div layout-gt-sm="row">
+                <div layout-gt-sm="row" class="form-mail-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_EMAIL"></label>
                         <input type="text" ng-model="data.email" pattern="{{emailPattern}}" required>

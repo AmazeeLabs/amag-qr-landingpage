@@ -38,6 +38,7 @@
     left: 1rem;
     top: 0;
     color: grey;
+    font-size: rem(14px);
     &:hover {
       cursor: text;
     }
@@ -414,4 +415,40 @@ md-select-menu {
 .md-select-menu-container.md-active {
   display: block;
   opacity: 1;
+}
+
+// DEFAULT STYLES FOR LEASINGFORM
+// =============================================================================
+.form-name-wrapper, .form-street-wrapper, .form-place-wrapper, .form-phone-wrapper,
+.form-mail-wrapper {
+  @include clearfix;
+}
+
+.form-street-wrapper, .form-place-wrapper {
+  md-input-container {
+    display: inline-block;
+    label {
+      top: 2rem;
+    }
+  }
+}
+
+.form-street-wrapper {
+  md-input-container:nth-child(1) {
+    width: 69%;
+  }
+  md-input-container:nth-child(2) {
+    width: 29%;
+    float: right;
+  }
+}
+
+.form-place-wrapper {
+  md-input-container:nth-child(1) {
+    width: 34%;
+  }
+  md-input-container:nth-child(2) {
+    width: 64%;
+    float: right;
+  }
 }
