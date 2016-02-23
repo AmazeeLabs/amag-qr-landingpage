@@ -11,10 +11,10 @@
         </md-list-item>
 
         <md-list-item ng-if="global.params.selectedMode" class="md-3-line" ng-repeat="variant in global.params.variantList" href="#/{{previousState}}/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{variant.id}}/{{global.params.selectedMode}}">
+            <img src="/assets/style/img/passat.jpg" alt="" />
             <div class="md-list-item-text">
                 <span style="font-weight: bold; font-size: 18px;">{{variant.name}}</span>
             </div>
-            <img src="/assets/style/img/passat.jpg" alt="" />
             <md-divider ng-if="!$last"></md-divider>
         </md-list-item>
     </div>
