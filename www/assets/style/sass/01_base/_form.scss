@@ -55,15 +55,15 @@
 // CHECKBOX
 // =============================================================================
 input[type="checkbox"] {
-    visibility: hidden;
-    margin: 0;
-    width: 20px;
-    height: 20px;
+  visibility: hidden;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+md-checkbox {
+  &:focus, &:focus .md-label{
+    outline: none;
   }
-  md-checkbox {
-    &:focus, &:focus .md-label{
-      outline: none;
-    }
   .md-label {
     position: relative;
     &:before {
@@ -100,10 +100,11 @@ md-checkbox[aria-checked="true"] .md-label {
 // RADIO BUTTON
 // =============================================================================
 input[type="radio"] {
-    visibility: hidden;
-    margin: 0;
-    width: 20px;
-    height: 20px;
+  visibility: hidden;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  user-select: none;
 }
 
 md-radio-button .md-label {
@@ -347,26 +348,26 @@ md-input-container {
 }
 
 md-select-menu:not(.md-overflow) md-content {
-    padding-top: 8px;
-    padding-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 md-select-menu md-content {
-    min-width: 136px;
-    min-height: 48px;
-    max-height: 256px;
-    overflow-y: auto;
+  min-width: 136px;
+  min-height: 48px;
+  max-height: 256px;
+  overflow-y: auto;
 }
 
 md-select-menu > * {
-    opacity: 0;
+  opacity: 0;
 }
 
 md-content {
-    display: block;
-    position: relative;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  display: block;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 md-select-menu {
@@ -391,23 +392,23 @@ md-select-menu {
 }
 
 .md-select-menu-container {
-    position: fixed;
-    left: 0 !important;
-    top: 0;
-    z-index: 90;
-    opacity: 0;
-    width: 100%;
-    display: none;
+  position: fixed;
+  left: 0 !important;
+  top: 0;
+  z-index: 90;
+  opacity: 0;
+  width: 100%;
+  display: none;
 }
 
 .md-select-menu-container.md-active md-select-menu > * {
-    opacity: 1;
-    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-    transition-duration: 150ms;
-    transition-delay: 100ms;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transition-duration: 150ms;
+  transition-delay: 100ms;
 }
 
 .md-select-menu-container.md-active {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }

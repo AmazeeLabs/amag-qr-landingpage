@@ -18,7 +18,7 @@
 }
 
 .md-track-container {
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 fieldset {
@@ -47,7 +47,8 @@ fieldset {
 // TEXT INPUT
 // =============================================================================
 input[type=text], input[type=number] {
-  border: 1px solid $grey;
+  border: 1px solid $form-line;
+  border-radius: 0px;
   .md-input-focused & {
     border-color: $audi-red;
   }
@@ -138,9 +139,9 @@ md-input-container.md-input-invalid {
 // =============================================================================
 md-select.ng-invalid-required, md-select.ng-valid-required {
   border: 1px solid $form-line;
-  border-radius: 3px;
   background: url(../img/audi/arrow-dropdown.svg) no-repeat right 1rem center;
   background-size: 0.8rem;
+  border-radius: 0px;
 }
 
 md-input-container {
@@ -153,7 +154,6 @@ md-input-container {
 md-select-menu {
   md-content {
     border: 1px solid $form-line;
-    border-radius: 3px;
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
   }
 }

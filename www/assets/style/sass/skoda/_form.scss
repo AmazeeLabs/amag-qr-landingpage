@@ -38,7 +38,7 @@
 // TEXT INPUT
 // =============================================================================
 input[type=text], input[type=number] {
-    border: 1px solid $grey;
+    border: 1px solid $form-line;
     .md-input-focused & {
       border-color: $skoda-green;
     }
@@ -48,12 +48,12 @@ input[type=text], input[type=number] {
 // =============================================================================
 md-checkbox .md-label {
   &:before {
-    border: 1px solid $grey;
+    border: 1px solid $form-line;
   }
 }
 md-checkbox[aria-checked="true"] .md-label {
   &:before {
-    border: 1px solid $grey;
+    border: 1px solid $form-line;
   }
   &:after {
     border: 3px solid $skoda-green;
@@ -66,7 +66,7 @@ md-checkbox[aria-checked="true"] .md-label {
 // =============================================================================
 md-radio-button .md-label {
   &:before {
-    border: 1px solid $grey;
+    border: 1px solid $form-line;
   }
 }
 md-radio-button[aria-checked="true"] .md-label {
@@ -81,7 +81,7 @@ md-radio-button[aria-checked="true"] .md-label {
     left: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid $grey;
+    border: 1px solid $form-line;
     border-radius: 50%;
   }
 }
@@ -114,7 +114,7 @@ md-input-container.md-input-invalid {
 // SELECT
 // =============================================================================
 md-select.ng-invalid-required, md-select.ng-valid-required {
-  border: 1px solid $grey;
+  border: 1px solid $form-line;
   border-radius: 3px;
   background: url(../img/skoda/arrow-dropdown.svg) no-repeat right 1rem center;
   background-size: 0.8rem;
