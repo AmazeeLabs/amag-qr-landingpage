@@ -156,6 +156,12 @@ md-select-menu {
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
   }
 }
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
+  }
+}
 
 
 // CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
@@ -167,15 +173,5 @@ md-select-menu {
   }
   span {
     top: 4px;
-  }
-}
-
-// DEFAULT STYLES FOR LEASINGFORM
-// =============================================================================
-.form-street-wrapper, .form-place-wrapper {
-  md-input-container {
-    label {
-      top: 2.1rem;
-    }
   }
 }

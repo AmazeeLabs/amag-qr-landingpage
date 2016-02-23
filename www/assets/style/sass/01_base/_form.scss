@@ -19,6 +19,7 @@
   }
   md-input-container {
     position: relative;
+    display: block;
   }
 
   input[type=text], input[type=number] {
@@ -36,7 +37,9 @@
   label {
     position: absolute;
     left: 1rem;
-    top: 0;
+    top: 1rem;
+    height: 3rem;
+    line-height: 3rem;
     color: grey;
     font-size: rem(14px);
     &:hover {
@@ -302,7 +305,7 @@ md-select-menu md-option {
 }
 
 .md-click-catcher {
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -319,10 +322,11 @@ md-select.ng-invalid-required, md-select.ng-valid-required {
 
 .select {
   user-select: none;
+  @include clearfix;
   .md-placeholder, label {
     z-index: 2;
-    top: 1rem;
-    padding-right: 3px;
+    top: 0;
+    padding-right: 30px;
     background: #fff;
   }
 
@@ -347,11 +351,6 @@ md-input-container {
     display: none;
   }
 }
-
-// md-select-menu:not(.md-overflow) md-content {
-//   padding-top: 8px;
-//   padding-bottom: 8px;
-// }
 
 md-select-menu md-content {
   min-width: 136px;
@@ -424,17 +423,9 @@ md-select-menu {
   @include clearfix;
 }
 
-.form-street-wrapper, .form-place-wrapper {
-  md-input-container {
-    display: inline-block;
-    label {
-      top: 2rem;
-    }
-  }
-}
-
 .form-street-wrapper {
   md-input-container:nth-child(1) {
+    float: left;
     width: 69%;
   }
   md-input-container:nth-child(2) {
@@ -445,10 +436,23 @@ md-select-menu {
 
 .form-place-wrapper {
   md-input-container:nth-child(1) {
+    float: left;
     width: 34%;
   }
   md-input-container:nth-child(2) {
     width: 64%;
     float: right;
+  }
+}
+
+@include breakpoint(min-width 600px) {
+  .form-name-wrapper{
+    md-input-container {
+      float: left;
+      width: 49%;
+    }
+    md-input-container:nth-child(2) {
+      float: right;
+    }
   }
 }
