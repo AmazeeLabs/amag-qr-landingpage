@@ -27,6 +27,7 @@ input[type=text],input[type=number] {
   }
 }
 
+
 // CHECKBOX
 // =============================================================================
 md-checkbox .md-label {
@@ -45,6 +46,7 @@ md-checkbox[aria-checked="true"] .md-label {
     border-right: none;
   }
 }
+
 
 // RADIO BUTTON
 // =============================================================================
@@ -72,6 +74,7 @@ md-radio-button[aria-disabled="true"] .md-label {
     border-bottom: 1px solid $blue-light-grey;
   }
 }
+
 
 // BASIC STYLES
 // =============================================================================
@@ -120,4 +123,29 @@ md-radio-button[aria-disabled="true"] .md-label {
 
 .form .layout-row.total-outer-wrapper {
   border-bottom: 2px solid $form-line !important;
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  background: url(../img/volkswagen/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
 }

@@ -35,7 +35,7 @@ footer {
   //language switch
   .language {
     position: relative;
-    padding: 1rem;
+    padding: 0; //1rem;
     @include arrowLeft;
     padding-left: 2.5rem;
     background-image: url(../img/skoda/arrow-right-single.svg);
@@ -53,6 +53,10 @@ footer {
       .language-options {
         @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
       }
+    }
+
+    .md-text {
+      left: 2.5rem;
     }
   }
 

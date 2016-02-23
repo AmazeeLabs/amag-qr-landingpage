@@ -47,6 +47,11 @@ footer {
         @include button($bg:$white,$font-size:15,$color:$footer-text,$display:block,$padding:.8rem,$border-radius:3px,$margin:0px auto,$max-width:300px);
       }
     }
+
+    .md-text {
+      left: 0;
+      width: 100%;
+    }
   }
 
   //impressum, terms and legal styles

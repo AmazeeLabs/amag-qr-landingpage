@@ -34,7 +34,7 @@ footer {
       @include button($bg:$light-grey-30,$font-size:15,$color:$black,$padding:.8rem,$display:table,$margin:30px auto,$max-width:100%);
       width: 100%; //calc(100% - 2rem);
       @include arrowRight;
-      background-image:url(../img/audi/arrow-dropdown.svg);
+      background-image:url(../img/audi/arrow-dropdown-footer.svg);
       background-size: 14px auto;
       background-position: right 10px center;
     }

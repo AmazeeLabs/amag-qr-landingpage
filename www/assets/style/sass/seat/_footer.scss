@@ -41,12 +41,13 @@ footer {
     background-color: $black;
     color: $white;
     position: relative;
-    padding: 1.5rem;
+    padding: 0; //1.5rem;
     @include arrowRight;
     background-image: url(../img/seat/arrow-right.svg);
     background-size: 0.6rem;
     background-position: right 1.5rem center;
     .md-select-value {
+      width: calc(100% + 1.5rem);
     }
     .md-select-menu-container {
       position: absolute;
@@ -58,6 +59,9 @@ footer {
       .language-options {
         @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
       }
+    }
+    .md-text {
+      left: 1.5rem;
     }
   }
 
