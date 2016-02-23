@@ -314,10 +314,10 @@ md-select.ng-invalid-required, md-select.ng-valid-required {
 md-input-container {
   .md-select-placeholder span, .md-text {
     font-size: rem(16px);
-    line-height: 3rem;
+    line-height: 2.5rem;
     color: grey;
     position: absolute;
-    left: 1rem;
+    left: -.5rem;
     top: 0;
   }
 
