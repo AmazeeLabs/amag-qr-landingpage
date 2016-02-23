@@ -90,11 +90,38 @@ md-radio-button[aria-disabled="true"] .md-label {
     border: 1px solid $lighter-grey;
   }
 }
+
+
 // CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
 // =============================================================================
 
 .contact-form fieldset.contact-fieldset {
   &:not(:last-of-type) {
     border-bottom: 1px solid $lighter-grey;
+  }
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $grey;
+  border-radius: 3px;
+  background: url(../img/skoda/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $grey;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
   }
 }
