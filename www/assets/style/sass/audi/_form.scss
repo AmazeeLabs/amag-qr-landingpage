@@ -42,20 +42,18 @@ fieldset {
   fieldset legend {
     @include fontextendedbold;
   }
-}
-
-// TEXT INPUT
-// =============================================================================
-input[type=text], input[type=number] {
-  border: 1px solid $form-line;
-  border-radius: 0px;
-  .md-input-focused & {
-    border-color: $audi-red;
+  // TEXT INPUT
+  // =============================================================================
+  input[type=text], input[type=number] {
+    border: 1px solid $form-line;
+    border-radius: 0px;
+    .md-input-focused & {
+      border-color: $audi-red;
+    }
   }
-}
-
-.form .layout-row.total-outer-wrapper {
-  border-bottom: 2px solid $form-line !important;
+  .layout-row.total-outer-wrapper {
+    border-bottom: 2px solid $form-line !important;
+  }
 }
 
 // CHECKBOX
@@ -155,5 +153,11 @@ md-select-menu {
   md-content {
     border: 1px solid $form-line;
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
   }
 }

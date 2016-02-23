@@ -159,18 +159,17 @@ md-select.ng-invalid-required, md-select.ng-valid-required {
   background-size: 0.8rem;
 }
 
-md-input-container {
-  .md-select-placeholder span, .md-text {
-    font-size: rem(16px);
-    color: grey;
-  }
-}
-
 md-select-menu {
   md-content {
     border: 1px solid $form-line;
     border-radius: 3px;
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
   }
 }
 
@@ -186,4 +185,3 @@ md-select-menu {
     top: 4px;
   }
 }
-
