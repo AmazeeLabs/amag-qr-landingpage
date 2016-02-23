@@ -100,12 +100,6 @@ md-checkbox[aria-checked="true"] .md-label {
 
 // RADIO BUTTON
 // =============================================================================
-input[type="radio"] {
-    visibility: hidden;
-    margin: 0;
-    width: 20px;
-    height: 20px;
-}
 md-radio-button .md-label {
   &:before {
     border: 1px solid $grey;
