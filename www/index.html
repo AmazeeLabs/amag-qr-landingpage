@@ -75,7 +75,8 @@
 <!-- Menu Navigation Toggle-->
 <script type="text/javascript">
   $(document).ready(function() {
-    $('.burger').click(function() {
+    $('.burger').click(function(e) {
+        e.preventDefault();
       $('.header-wrapper').toggleClass('active');
     });
   });
