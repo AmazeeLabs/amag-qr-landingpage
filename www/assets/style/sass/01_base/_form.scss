@@ -1,6 +1,5 @@
 // DEFAULT FORM STYLES
 // =============================================================================
-
 .form {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -246,7 +245,21 @@ md-radio-group:focus {
   }
 }
 
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+.md-input-messages-animation {
+  display: none;
+}
 
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    display: inline-block;
+    span {
+      top: 4px;
+      left: 1rem;
+    }
+  }
+}
 
 // DEFAULT STYLES FOR LEASINGFORM
 // =============================================================================
@@ -279,6 +292,13 @@ md-radio-group:focus {
 
 // SELECT
 // =============================================================================
+md-select {
+  outline: none;
+}
+md-select-menu md-option {
+  outline: none;
+}
+
 .md-click-catcher {
   z-index: 1;
   width: 100%;
