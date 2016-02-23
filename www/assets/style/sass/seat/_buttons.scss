@@ -38,6 +38,7 @@
 .form button.md-primary {
   @include button($bg:$seat-red,$font-size:14px,$color:$white,$padding:.8rem 1.2rem,$display:block,$margin:.2rem auto 1rem);
   width: 100%;
+  @include fontmedium;
 }
 
 .form a.md-none-theme {
