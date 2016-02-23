@@ -4,7 +4,7 @@
         <div layout="row" class="slider">
             <span translate="LEASINGCALC_PAYMENT"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.payment}} {{'LEASINGCALC_PAYMENT_FRANCS'|translate}}</span>
-            <md-slider style="padding-left:15px;" flex="95" step="100" min="0" max="25500" ng-model="data.payment"
+            <md-slider style="padding-left:15px;" step="100" min="0" max="25500" ng-model="data.payment"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
@@ -12,7 +12,7 @@
         <div layout="row" class="slider">
             <span translate="LEASINGCALC_DURATION"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.duration}} {{'LEASINGCALC_DURATION_MONTH'|translate}}</span>
-            <md-slider style="padding-left:15px;" flex="95" step="12" min="12" max="60" ng-model="data.duration"
+            <md-slider style="padding-left:15px;" step="12" min="12" max="60" ng-model="data.duration"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
@@ -20,7 +20,7 @@
         <div layout="row" class="slider">
             <span translate="LEASINGCALC_MILAGE"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.milage}} {{'LEASINGCALC_MILAGE_KILOMETER'|translate}}</span>
-            <md-slider style="padding-left:15px;" flex="95" step="5000" min="10000" max="50000" ng-model="data.milage"
+            <md-slider style="padding-left:15px;" step="5000" min="10000" max="50000" ng-model="data.milage"
                        aria-label="blue" class="md-primary">
             </md-slider>
         </div>
@@ -44,14 +44,14 @@
                 <span class="total-value" >{{'LEASINGCALC_CHF' | translate}}&nbsp;{{result}}</span>
             </div>
 
-            <md-button type="button" ng-click="calculate()" class="md-raised md-primary" flex="100"
+            <md-button type="button" ng-click="calculate()" class="md-raised md-primary"
                        translate="LEASINGCALC_CALCULATE"
                        aria-label="Calculate"></md-button>
 
-            <!-- <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised" flex="50"
+            <!-- <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised"
                        translate="LEASINGCALC_BUTTON_BACK"
                        aria-label="Back"></md-button> -->
-            <md-button type="button" href="#/mainFormular/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}/leasing" class="md-raised" flex="50" translate="LEASINGCALC_CONTACT"
+            <md-button type="button" href="#/mainFormular/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}/leasing" class="md-raised" translate="LEASINGCALC_CONTACT"
                        aria-label="Next"></md-button>
         </div>
     </div>
