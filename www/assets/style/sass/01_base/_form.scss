@@ -1,6 +1,5 @@
 // DEFAULT FORM STYLES
 // =============================================================================
-
 .form {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -293,6 +292,13 @@ md-input-container.md-input-invalid {
 
 // SELECT
 // =============================================================================
+md-select {
+  outline: none;
+}
+md-select-menu md-option {
+  outline: none;
+}
+
 .md-click-catcher {
   z-index: 1;
   width: 100%;
