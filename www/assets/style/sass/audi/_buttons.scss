@@ -67,9 +67,8 @@
   background-position: right 16px center;
 }
 
-.form a.md-none-theme {
+.form a.md-none-theme, .form a.md-button {
   @include button($bg:$light-grey-30,$color:$black,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto);
-  width: 100%;
   text-align: left;
   @include fontextendedbold;
 }

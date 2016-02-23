@@ -22,7 +22,7 @@
     position: relative;
   }
 
-  input[type=text] {
+  input[type=text], input[type=number] {
     width: 100%;
     margin-top: 1rem;
     height: 3rem;
@@ -41,6 +41,66 @@
 
   .md-input-focused label{
     display: none;
+  }
+}
+
+// CHECKBOX
+// =============================================================================
+input[type="checkbox"] {
+    visibility: hidden;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+md-checkbox .md-label {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    border: none;
+  }
+  &:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    background: transparent;
+    transform: rotate(-45deg);
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+input[type="radio"] {
+    visibility: hidden;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+md-radio-button .md-label {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
   }
 }
 

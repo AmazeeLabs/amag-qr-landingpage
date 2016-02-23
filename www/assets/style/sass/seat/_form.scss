@@ -79,3 +79,39 @@
   margin-top: 1.5rem;
   border-bottom: 1px solid $form-line;
 }
+
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $seat-red;
+  }
+  &:after {
+    border: 3px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+md-radio-button .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    border: 5px solid $seat-black;
+  }
+}
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 1px solid $lighter-grey;
+  }
+}
