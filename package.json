@@ -20,6 +20,7 @@
     "gulp-useref": "^3.0.5",
     "gulp-util": "^2.2.20",
     "merge-stream": "^1.0.0",
+    "csswring": ">=4.0.0",
     "wiredep": "^2.2.2"
   },
   "scripts": {
