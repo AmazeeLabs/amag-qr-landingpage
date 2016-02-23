@@ -30,7 +30,19 @@
   .layout-row {
     border-color: $white !important;
   }
+  fieldset legend {
+    @include fontbold;
+  }
 }
+
+// TEXT INPUT
+// =============================================================================
+input[type=text], input[type=number] {
+    border: 1px solid $grey;
+    .md-input-focused & {
+      border-color: $skoda-green;
+    }
+  }
 
 // CHECKBOX
 // =============================================================================
@@ -76,5 +88,13 @@ md-radio-button[aria-checked="true"] .md-label {
 md-radio-button[aria-disabled="true"] .md-label {
   &:before {
     border: 1px solid $lighter-grey;
+  }
+}
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
   }
 }

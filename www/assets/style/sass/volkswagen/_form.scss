@@ -9,6 +9,9 @@ form {
     margin-top: rem(25px);
     margin-bottom: rem(25px);
   }
+  fieldset legend {
+    @include fontbold;
+  }
 }
 
 .slider {
@@ -17,8 +20,11 @@ form {
     font-size: rem(15px);
   }
 }
-input[type=text] {
+input[type=text],input[type=number] {
   border: 1px solid $light-grey;
+  .md-input-focused & {
+    border-color: $vw-blue;
+  }
 }
 
 // CHECKBOX
@@ -58,6 +64,17 @@ md-radio-button[aria-disabled="true"] .md-label {
   }
 }
 
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $blue-light-grey;
+  }
+}
+
+// BASIC STYLES
+// =============================================================================
 .md-input-message-animation {
   font-size: rem(12px);
 }

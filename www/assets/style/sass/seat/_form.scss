@@ -68,6 +68,9 @@
   .layout-row {
     border-color: $form-line !important;
   }
+  fieldset legend {
+    @include fontbold;
+  }
 }
 
 .form h1 {
@@ -79,6 +82,15 @@
   margin-top: 1.5rem;
   border-bottom: 1px solid $form-line;
 }
+
+// TEXT INPUT
+// =============================================================================
+input[type=text],input[type=number] {
+    border: 1px solid $grey;
+    .md-input-focused & {
+      border-color: $seat-red;
+    }
+  }
 
 // CHECKBOX
 // =============================================================================
@@ -119,6 +131,7 @@ md-radio-button[aria-disabled="true"] .md-label {
   }
 }
 
+
 // SELECT
 // =============================================================================
 md-select.ng-invalid-required, md-select.ng-valid-required {
@@ -143,3 +156,17 @@ md-select-menu {
     box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
   }
 }
+
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
+  }
+  span {
+    top: 4px;
+  }
+}
+
