@@ -101,6 +101,15 @@ md-radio-button[aria-disabled="true"] .md-label {
   }
 }
 
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    span {
+      color: $skoda-green;
+    }
+  }
+}
 
 // SELECT
 // =============================================================================

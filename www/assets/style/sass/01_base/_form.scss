@@ -246,7 +246,21 @@ md-radio-group:focus {
   }
 }
 
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+.md-input-messages-animation {
+  display: none;
+}
 
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    display: inline-block;
+    span {
+      top: 4px;
+      left: 1rem;
+    }
+  }
+}
 
 // DEFAULT STYLES FOR LEASINGFORM
 // =============================================================================
