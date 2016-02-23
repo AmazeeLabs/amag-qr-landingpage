@@ -21,24 +21,51 @@ input[type=text] {
   border: 1px solid $light-grey;
 }
 
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 1px solid $grey;
+    border-radius: 2px;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $vw-blue;
+  }
+  &:after {
+    border: 2px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+input[type="radio"] {
+    visibility: hidden;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+md-radio-button .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    border: 7px solid $vw-blue;
+  }
+}
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 2px solid $lighter-grey;
+  }
+}
+
 .md-input-message-animation {
   font-size: rem(12px);
-}
-
-button[type=submit], .back-button-form {
-  width: calc(100% - 2rem);
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  @include fontbold;
-}
-
-button[type=submit] {
-  @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table,$margin:15px auto 75px);
-}
-
-.back-button-form {
-  @include button($bg:$light-grey,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table,$margin:15px auto);
-  text-align: center;
 }
 
 .md-track, .md-thumb-container {
