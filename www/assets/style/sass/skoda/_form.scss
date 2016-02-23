@@ -32,6 +32,15 @@
   }
 }
 
+// TEXT INPUT
+// =============================================================================
+input[type=text] {
+    border: 1px solid $grey;
+    .md-input-focused & {
+      border-color: $skoda-green;
+    }
+  }
+
 // CHECKBOX
 // =============================================================================
 md-checkbox .md-label {

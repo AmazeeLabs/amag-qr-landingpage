@@ -80,6 +80,15 @@
   border-bottom: 1px solid $form-line;
 }
 
+// TEXT INPUT
+// =============================================================================
+input[type=text] {
+    border: 1px solid $grey;
+    .md-input-focused & {
+      border-color: $seat-red;
+    }
+  }
+
 // CHECKBOX
 // =============================================================================
 md-checkbox .md-label {

@@ -41,6 +41,15 @@ fieldset {
   }
 }
 
+// TEXT INPUT
+// =============================================================================
+input[type=text] {
+  border: 1px solid $grey;
+  .md-input-focused & {
+    border-color: $audi-red;
+  }
+}
+
 .form .layout-row.total-outer-wrapper {
   border-bottom: 2px solid $form-line !important;
 }

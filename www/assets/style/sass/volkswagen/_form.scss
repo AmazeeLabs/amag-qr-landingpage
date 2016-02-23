@@ -19,6 +19,9 @@ form {
 }
 input[type=text] {
   border: 1px solid $light-grey;
+  .md-input-focused & {
+    border-color: $vw-blue;
+  }
 }
 
 // CHECKBOX
