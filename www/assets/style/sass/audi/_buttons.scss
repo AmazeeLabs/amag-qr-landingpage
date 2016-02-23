@@ -57,8 +57,7 @@
 }
 
 .form button.md-primary {
-  @include button($bg:$black,$color:$white,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto);
-  width: 100%;
+  @include button($bg:$black,$color:$white,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$width:100%);
   text-align: left;
   @include fontextendedbold;
   background-image: url(../img/audi/arrow-right-white.svg);
@@ -68,7 +67,11 @@
 }
 
 .form a.md-none-theme, .form a.md-button {
-  @include button($bg:$light-grey-30,$color:$black,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto);
+  @include button($bg:$light-grey-30,$color:$black,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$width:100%);
   text-align: left;
   @include fontextendedbold;
+  background-image: url(../img/audi/arrow-right-black.svg);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
