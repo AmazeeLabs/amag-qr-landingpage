@@ -90,8 +90,38 @@ gulp.task('browserSync', function() {
 });
 
 
+/* Gulp browserSync init task*/
+gulp.task('amazee-browser-sync', function() {
+  var vghostmode = false;
+  var vopen = false;
+
+  if(util.env.ghostmode) {
+    var vghostmode = true;
+  }
+  if(util.env.open) {
+    var vopen = true;
+  }
+
+  return browserSync.init(null, {
+    server: {
+      baseDir: 'www'
+    },
+    startPath: "",
+    files: path.css + '/*.css',
+    open: vopen,
+    notify: false,
+    logConnections: true,
+    reloadOnRestart: true,
+    ghostMode: {
+      clicks: vghostmode,
+      forms: vghostmode,
+      scroll: vghostmode
+    }
+  });
+});
+
 /* Gulp SASS task with browserSync*/
-gulp.task('sass', function () {
+gulp.task('amazee-sass', function () {
   var processors = [
     autoprefixer({browsers: ['last 10 versions', 'ie 9']})
   ];
@@ -112,7 +142,7 @@ gulp.task('sass', function () {
 });
 
 /* Gulp SASS prod compile task*/
-gulp.task('sass-build', function () {
+gulp.task('amazee-sass-build', function () {
   var processors = [
     autoprefixer({browsers: ['last 10 versions', 'ie 9']}),
     csswring
@@ -126,16 +156,16 @@ gulp.task('sass-build', function () {
 
 
 /* Gulp compile dev task*/
-gulp.task('compile', ['sass']);
+gulp.task('compile', ['amazee-sass']);
 
 
 /* Gulp build prod task*/
-gulp.task('build', ['sass-build']);
+gulp.task('build', ['amazee-sass-build']);
 
 
 /* Gulp browserSync init task*/
-gulp.task('watch', ['browserSync'], function () {
-    gulp.watch(path.sass + '/**/*.scss', ['sass']);
+gulp.task('watch', ['amazee-browser-sync'], function () {
+    gulp.watch(path.sass + '/**/*.scss', ['amazee-sass']);
     gulp.watch(path.js + '/**/*.js').on('change', reload);
     gulp.watch("*.html").on('change', reload);
 });
